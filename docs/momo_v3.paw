@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>07ABED16-9C70-451E-8406-D471EB99E76A</UUID>
-        <nextObjectID>137</nextObjectID>
+        <nextObjectID>139</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -85,7 +85,7 @@
         <attribute name="order" type="int64">0</attribute>
         <attribute name="name" type="string">server</attribute>
         <relationship name="domain" type="0/1" destination="LMENVIRONMENTDOMAIN" idrefs="z136"></relationship>
-        <relationship name="values" type="0/0" destination="LMENVIRONMENTVARIABLEVALUE" idrefs="z106"></relationship>
+        <relationship name="values" type="0/0" destination="LMENVIRONMENTVARIABLEVALUE" idrefs="z106 z139"></relationship>
     </object>
     <object type="LMKEYVALUE" id="z105">
         <attribute name="value" type="string">["Bearer ",{"data":{"request":"CF791025-47A7-4DCC-B1D7-408538F7423E","keyPath":["access_token"],"format":0},"identifier":"com.luckymarmot.ResponseBodyPathDynamicValue"}]</attribute>
@@ -433,7 +433,7 @@
         <attribute name="redirectauthorization" type="bool">0</attribute>
         <attribute name="method" type="string">POST</attribute>
         <attribute name="followredirects" type="bool">0</attribute>
-        <attribute name="body" type="string">["{\\n\\t\\"text\\": \\"测试8\\"\\n}"]</attribute>
+        <attribute name="body" type="string">["{\\n\\t\\"text\\": \\"测试",{"data":{"useUppercaseLetters":1,"length":32,"useDigits":1,"useHexDigits":0,"useASCIISymbols":0,"useLowercaseLetters":1},"identifier":"com.luckymarmot.NonceDynamicValue"},"\\"\\n}"]</attribute>
         <attribute name="order" type="int64">2</attribute>
         <attribute name="name" type="string">record/create</attribute>
         <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
@@ -444,7 +444,7 @@
         <attribute name="uuid" type="string">AC8D79D1-C734-411E-B44F-97C3B4729189</attribute>
         <attribute name="order" type="int64">0</attribute>
         <attribute name="name" type="string">Default Domain</attribute>
-        <relationship name="environments" type="0/0" destination="LMENVIRONMENT" idrefs="z137"></relationship>
+        <relationship name="environments" type="0/0" destination="LMENVIRONMENT" idrefs="z137 z138"></relationship>
         <relationship name="variables" type="0/0" destination="LMENVIRONMENTVARIABLE" idrefs="z104"></relationship>
     </object>
     <object type="LMENVIRONMENT" id="z137">
@@ -453,5 +453,17 @@
         <attribute name="name" type="string">momo_v3</attribute>
         <relationship name="domain" type="0/1" destination="LMENVIRONMENTDOMAIN" idrefs="z136"></relationship>
         <relationship name="variablesvalues" type="0/0" destination="LMENVIRONMENTVARIABLEVALUE" idrefs="z106"></relationship>
+    </object>
+    <object type="LMENVIRONMENT" id="z138">
+        <attribute name="uuid" type="string">AFB6355C-EC0E-465C-BFE9-703121D291ED</attribute>
+        <attribute name="order" type="int64">1</attribute>
+        <attribute name="name" type="string">linode</attribute>
+        <relationship name="domain" type="0/1" destination="LMENVIRONMENTDOMAIN" idrefs="z136"></relationship>
+        <relationship name="variablesvalues" type="0/0" destination="LMENVIRONMENTVARIABLEVALUE" idrefs="z139"></relationship>
+    </object>
+    <object type="LMENVIRONMENTVARIABLEVALUE" id="z139">
+        <attribute name="value" type="string">23.92.24.181</attribute>
+        <relationship name="environment" type="1/1" destination="LMENVIRONMENT" idrefs="z138"></relationship>
+        <relationship name="variable" type="1/1" destination="LMENVIRONMENTVARIABLE" idrefs="z104"></relationship>
     </object>
 </database>
