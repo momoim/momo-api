@@ -41,7 +41,7 @@ nginx:
   restart: always
   image: nginx:latest
   ports:
-    - "8090:80"
+    - "80:80"
   links:
     - fpm:fpm
   volumes:

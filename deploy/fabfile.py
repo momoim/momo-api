@@ -16,41 +16,33 @@ env.shell = "/bin/bash -c"
 
 # 部署服务器ssh地址
 env.hosts = [
-    'root@192.168.33.104:22',
+    'root@23.92.24.181:22',
 ]
 
 # 部署服务器ssh密码,建议用公钥认证
-# env.passwords = {
-#     'root@192.168.33.104:22': 'password',
-# }
+#env.passwords = {
+#     'root@23.92.24.181:22': 'password',
+#}
 
 # 部署服务器角色定义
 env.roledefs = {
-    'staging': [env.hosts[0]],  # 角色名 ssh地址
-    'testing': [env.hosts[0]],
+    'prod': [env.hosts[0]],  # 角色名 ssh地址
 }
 
 # 部署角色对应git分支, 默认为master
 branches = {
-    'staging': 'staging',  # 角色名 分支名
-    'testing': 'testing',
     'default': 'master',
 }
 
 # 部署服务器别名, 默认为角色名
 aliases = {
-    env.hosts[0]: 'vagrant',  # ssh地址 别名
+    env.hosts[0]: 'linode',  # ssh地址 别名
 }
 
 # 角色域名配置用于检测服务是否启动成功
 domain_configs = {
-    'testing': {
-        'domain': 'example.com',
-        'prefix': 'api.',
-        'port': 8080
-    },
-    'staging': {
-        'domain': 'example.com',
+    'default': {
+        'domain': 'momo.im',
         'prefix': 'api.',
         'port': 80
     },
@@ -69,7 +61,7 @@ projects = {
         "local_path": PROJECT_ROOT,  # 本地地址
         "alive": '-H "Host: {prefix}{domain}" {host}:{port}',  # 检查状态
         "is_app": False,  # 是否app,默认false
-        'roles': ['testing', 'staging'],  # 部署角色
+        'roles': ['prod'],  # 部署角色
     },
 }
 
@@ -143,7 +135,7 @@ def _get_branch(role):
 
 
 # # @task
-@parallel
+#@parallel
 def prepare():
     """
     开发环境准备： fab prepare:roles=staging
@@ -219,7 +211,7 @@ def install_docker():
                      '/etc/apt/sources.list.d/docker.list'))
             sudo('apt-get update -y && apt-get install -y docker-engine')
 
-        mount_docker()
+        #mount_docker()
 
 
 def mount_docker():
