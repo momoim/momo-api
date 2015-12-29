@@ -7,7 +7,8 @@ RUN apt-get update && apt-get install -y openssh-server
 RUN mkdir -p /var/run/sshd && sed -i "s/UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config && sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config && sed -i "s/PermitRootLogin.*/PermitRootLogin yes/g" /etc/ssh/sshd_config
 RUN echo 'root:password' | chpasswd
 
-RUN docker-php-pecl-install xdebug
+COPY xdebug-2.3.3.tgz /tmp/xdebug-2.3.3.tgz
+RUN docker-php-pecl-install /tmp/xdebug-2.3.3.tgz
 
 RUN echo "xdebug.default_enable = 1" >> /usr/local/etc/php/conf.d/docker-php-pecl-xdebug.ini
 RUN echo "xdebug.idekey = \"PHPStorm\"" >> /usr/local/etc/php/conf.d/docker-php-pecl-xdebug.ini

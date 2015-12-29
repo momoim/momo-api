@@ -57,4 +57,7 @@ RUN docker-php-pecl-install memcache
 RUN apt-get update && apt-get install -y libssl-dev
 RUN docker-php-pecl-install mongo
 
+# php 5.6
+RUN sed -i "s/;always_populate_raw_post_data = -1/always_populate_raw_post_data = -1/" /usr/local/etc/php/php.ini
+
 CMD ["php-fpm"]

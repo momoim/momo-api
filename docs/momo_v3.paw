@@ -226,7 +226,7 @@
     </object>
     <object type="LMREQUEST" id="z118">
         <attribute name="uuid" type="string">D7835079-3A66-44C0-A8FD-70186873920A</attribute>
-        <attribute name="url" type="string">["http:\\/\\/",{"data":{"environmentVariable":"0CFA1801-D040-41CC-A8ED-FC6C697B7182"},"identifier":"com.luckymarmot.EnvironmentVariableDynamicValue"},"\\/auth\\/verify_code?zone_code=86\u2600mobile=13800000000"]</attribute>
+        <attribute name="url" type="string">["http:\\/\\/",{"data":{"environmentVariable":"0CFA1801-D040-41CC-A8ED-FC6C697B7182"},"identifier":"com.luckymarmot.EnvironmentVariableDynamicValue"},"\\/auth\\/verify_code.json?zone_code=86\u2600mobile=13800000000"]</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>

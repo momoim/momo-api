@@ -91,7 +91,9 @@ class Controller extends Controller_Core
             }
         }
 
-        if (in_array($this->current_url, $this->no_auth)) {
+        $url = $this->second = preg_replace('/.(xml|json)$/', '', $this->current_url);
+
+        if (in_array($url, $this->no_auth)) {
             return TRUE;
         }
 
