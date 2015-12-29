@@ -1,0 +1,21 @@
+demo说明
+1. 确认hosts文件已经加入192.168.94.26 new.api.uap26.91.com
+2. 检查运行demo的服务器时间与标准时间是否相差太大，如果相差太大需要调整成标准时间
+3. 修改支持POST json数据。
+
+如果不能通过认证检查以下数据是否正确。
+检查 application\config\database.php
+		$config['default']
+	
+	application\config\config.php
+		API_PATH 
+	
+	application\config\libraries\MY_Controller.php
+	    protected $user_id = null;
+		$this->init_oauth($this->need_authorize);
+	
+	demo\config.php 
+		define( "WB_AKEY" , 'cd910e7b63da96483040de3c6657f47004dd7ba95');
+		define( "WB_SKEY" , 'f1fa8df7d675f325c335028566cff8fc');
+		define( 'API_PATH','http://api.91.com/');			
+				

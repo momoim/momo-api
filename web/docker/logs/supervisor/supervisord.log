@@ -1,0 +1,721 @@
+2014-11-11 14:02:40,348 CRIT Supervisor running as root (no user in config file)
+2014-11-11 14:02:40,349 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-11 14:02:40,349 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-11 14:02:40,361 INFO RPC interface 'supervisor' initialized
+2014-11-11 14:02:40,362 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-11 14:02:40,362 INFO supervisord started with pid 1
+2014-11-11 14:02:41,367 INFO spawned: 'nginx' with pid 9
+2014-11-11 14:02:41,370 INFO spawned: 'php5-fpm' with pid 10
+2014-11-11 14:02:41,381 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139961410734416 for <Subprocess at 139961411021064 with name nginx in state STARTING> (stderr)>
+2014-11-11 14:02:41,404 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139961410734704 for <Subprocess at 139961411021280 with name php5-fpm in state STARTING> (stdout)>
+2014-11-11 14:02:42,405 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 14:02:42,406 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 14:03:17,572 WARN received SIGTERM indicating exit request
+2014-11-11 14:03:17,572 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-11 14:03:17,573 INFO waiting for nginx, php5-fpm to die
+2014-11-11 14:03:17,579 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 139961410758920 for <Subprocess at 139961411021280 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-11 14:03:17,579 INFO stopped: php5-fpm (exit status 0)
+2014-11-11 14:03:17,580 DEBG received SIGCLD indicating a child quit
+2014-11-11 14:03:17,580 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-11 14:03:17,583 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139961410734200 for <Subprocess at 139961411021064 with name nginx in state STOPPING> (stdout)>
+2014-11-11 14:03:17,583 INFO stopped: nginx (exit status 0)
+2014-11-11 14:03:17,584 DEBG received SIGCLD indicating a child quit
+2014-11-11 14:07:35,013 CRIT Supervisor running as root (no user in config file)
+2014-11-11 14:07:35,013 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-11 14:07:35,013 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-11 14:07:35,027 INFO RPC interface 'supervisor' initialized
+2014-11-11 14:07:35,028 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-11 14:07:35,029 INFO supervisord started with pid 1
+2014-11-11 14:07:36,036 INFO spawned: 'nginx' with pid 10
+2014-11-11 14:07:36,040 INFO spawned: 'php5-fpm' with pid 11
+2014-11-11 14:07:36,049 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139836222699856 for <Subprocess at 139836222986504 with name nginx in state STARTING> (stderr)>
+2014-11-11 14:07:36,074 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139836222700144 for <Subprocess at 139836222986720 with name php5-fpm in state STARTING> (stdout)>
+2014-11-11 14:07:37,076 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 14:07:37,077 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 16:10:03,266 WARN received SIGTERM indicating exit request
+2014-11-11 16:10:03,266 DEBG killing php5-fpm (pid 11) with signal SIGTERM
+2014-11-11 16:10:03,267 INFO waiting for nginx, php5-fpm to die
+2014-11-11 16:10:03,274 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 139836222724360 for <Subprocess at 139836222986720 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-11 16:10:03,274 INFO stopped: php5-fpm (exit status 0)
+2014-11-11 16:10:03,274 DEBG received SIGCLD indicating a child quit
+2014-11-11 16:10:03,275 DEBG killing nginx (pid 10) with signal SIGTERM
+2014-11-11 16:10:03,278 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139836222699640 for <Subprocess at 139836222986504 with name nginx in state STOPPING> (stdout)>
+2014-11-11 16:10:04,280 INFO stopped: nginx (exit status 0)
+2014-11-11 16:10:04,280 DEBG received SIGCLD indicating a child quit
+2014-11-11 16:10:05,171 CRIT Supervisor running as root (no user in config file)
+2014-11-11 16:10:05,171 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-11 16:10:05,171 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-11 16:10:05,184 INFO RPC interface 'supervisor' initialized
+2014-11-11 16:10:05,184 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-11 16:10:05,185 INFO supervisord started with pid 1
+2014-11-11 16:10:06,190 INFO spawned: 'nginx' with pid 9
+2014-11-11 16:10:06,194 INFO spawned: 'php5-fpm' with pid 10
+2014-11-11 16:10:06,202 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140620642253136 for <Subprocess at 140620642539784 with name nginx in state STARTING> (stderr)>
+2014-11-11 16:10:06,223 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140620642253424 for <Subprocess at 140620642540000 with name php5-fpm in state STARTING> (stdout)>
+2014-11-11 16:10:07,227 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 16:10:07,228 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 16:10:31,591 WARN received SIGTERM indicating exit request
+2014-11-11 16:10:31,592 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-11 16:10:31,592 INFO waiting for nginx, php5-fpm to die
+2014-11-11 16:10:31,599 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140620642277640 for <Subprocess at 140620642540000 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-11 16:10:31,599 INFO stopped: php5-fpm (exit status 0)
+2014-11-11 16:10:31,599 DEBG received SIGCLD indicating a child quit
+2014-11-11 16:10:31,600 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-11 16:10:31,602 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140620642252920 for <Subprocess at 140620642539784 with name nginx in state STOPPING> (stdout)>
+2014-11-11 16:10:31,602 INFO stopped: nginx (exit status 0)
+2014-11-11 16:10:31,603 DEBG received SIGCLD indicating a child quit
+2014-11-11 16:10:32,586 CRIT Supervisor running as root (no user in config file)
+2014-11-11 16:10:32,586 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-11 16:10:32,586 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-11 16:10:32,601 INFO RPC interface 'supervisor' initialized
+2014-11-11 16:10:32,602 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-11 16:10:32,602 INFO supervisord started with pid 1
+2014-11-11 16:10:33,608 INFO spawned: 'nginx' with pid 10
+2014-11-11 16:10:33,611 INFO spawned: 'php5-fpm' with pid 11
+2014-11-11 16:10:33,619 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140191276701168 for <Subprocess at 140191276983720 with name nginx in state STARTING> (stderr)>
+2014-11-11 16:10:33,641 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140191276701456 for <Subprocess at 140191276983936 with name php5-fpm in state STARTING> (stdout)>
+2014-11-11 16:10:34,643 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 16:10:34,643 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 20:19:37,649 WARN received SIGTERM indicating exit request
+2014-11-11 20:19:37,649 DEBG killing php5-fpm (pid 11) with signal SIGTERM
+2014-11-11 20:19:37,650 INFO waiting for nginx, php5-fpm to die
+2014-11-11 20:19:37,657 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140191276718344 for <Subprocess at 140191276983936 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-11 20:19:37,657 INFO stopped: php5-fpm (exit status 0)
+2014-11-11 20:19:37,657 DEBG received SIGCLD indicating a child quit
+2014-11-11 20:19:37,659 DEBG killing nginx (pid 10) with signal SIGTERM
+2014-11-11 20:19:37,661 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140191276700952 for <Subprocess at 140191276983720 with name nginx in state STOPPING> (stdout)>
+2014-11-11 20:19:37,662 INFO stopped: nginx (exit status 0)
+2014-11-11 20:19:37,662 DEBG received SIGCLD indicating a child quit
+2014-11-11 20:19:38,655 CRIT Supervisor running as root (no user in config file)
+2014-11-11 20:19:38,655 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-11 20:19:38,656 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-11 20:19:38,673 INFO RPC interface 'supervisor' initialized
+2014-11-11 20:19:38,674 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-11 20:19:38,674 INFO supervisord started with pid 1
+2014-11-11 20:19:39,679 INFO spawned: 'nginx' with pid 10
+2014-11-11 20:19:39,683 INFO spawned: 'php5-fpm' with pid 11
+2014-11-11 20:19:39,691 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140723994564080 for <Subprocess at 140723994846632 with name nginx in state STARTING> (stderr)>
+2014-11-11 20:19:39,716 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140723994564368 for <Subprocess at 140723994846848 with name php5-fpm in state STARTING> (stdout)>
+2014-11-11 20:19:40,718 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 20:19:40,718 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 10:37:31,745 WARN received SIGTERM indicating exit request
+2014-11-12 10:37:31,746 DEBG killing php5-fpm (pid 11) with signal SIGTERM
+2014-11-12 10:37:31,746 INFO waiting for nginx, php5-fpm to die
+2014-11-12 10:37:31,753 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140723994581256 for <Subprocess at 140723994846848 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 10:37:31,753 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 10:37:31,753 DEBG received SIGCLD indicating a child quit
+2014-11-12 10:37:31,754 DEBG killing nginx (pid 10) with signal SIGTERM
+2014-11-12 10:37:31,756 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140723994563864 for <Subprocess at 140723994846632 with name nginx in state STOPPING> (stdout)>
+2014-11-12 10:37:31,756 INFO stopped: nginx (exit status 0)
+2014-11-12 10:37:31,757 DEBG received SIGCLD indicating a child quit
+2014-11-12 10:37:32,730 CRIT Supervisor running as root (no user in config file)
+2014-11-12 10:37:32,730 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 10:37:32,730 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 10:37:32,745 INFO RPC interface 'supervisor' initialized
+2014-11-12 10:37:32,745 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 10:37:32,746 INFO supervisord started with pid 1
+2014-11-12 10:37:33,751 INFO spawned: 'nginx' with pid 9
+2014-11-12 10:37:33,754 INFO spawned: 'php5-fpm' with pid 10
+2014-11-12 10:37:33,762 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140614069384688 for <Subprocess at 140614069667240 with name nginx in state STARTING> (stderr)>
+2014-11-12 10:37:33,786 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140614069384976 for <Subprocess at 140614069667456 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 10:37:34,789 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 10:37:34,790 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 10:41:19,368 WARN received SIGTERM indicating exit request
+2014-11-12 10:41:19,369 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-12 10:41:19,369 INFO waiting for nginx, php5-fpm to die
+2014-11-12 10:41:19,379 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140614069401864 for <Subprocess at 140614069667456 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 10:41:19,379 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 10:41:19,379 DEBG received SIGCLD indicating a child quit
+2014-11-12 10:41:19,380 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-12 10:41:19,382 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140614069384472 for <Subprocess at 140614069667240 with name nginx in state STOPPING> (stdout)>
+2014-11-12 10:41:19,384 INFO stopped: nginx (exit status 0)
+2014-11-12 10:41:19,385 DEBG received SIGCLD indicating a child quit
+2014-11-12 10:41:20,319 CRIT Supervisor running as root (no user in config file)
+2014-11-12 10:41:20,319 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 10:41:20,319 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 10:41:20,334 INFO RPC interface 'supervisor' initialized
+2014-11-12 10:41:20,334 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 10:41:20,334 INFO supervisord started with pid 1
+2014-11-12 10:41:21,340 INFO spawned: 'nginx' with pid 9
+2014-11-12 10:41:21,343 INFO spawned: 'php5-fpm' with pid 10
+2014-11-12 10:41:21,350 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139702679229936 for <Subprocess at 139702679512488 with name nginx in state STARTING> (stderr)>
+2014-11-12 10:41:21,375 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139702679230224 for <Subprocess at 139702679512704 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 10:41:22,378 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 10:41:22,378 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 10:46:29,082 WARN received SIGTERM indicating exit request
+2014-11-12 10:46:29,082 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-12 10:46:29,083 INFO waiting for nginx, php5-fpm to die
+2014-11-12 10:46:29,090 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 139702679247112 for <Subprocess at 139702679512704 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 10:46:29,090 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 10:46:29,091 DEBG received SIGCLD indicating a child quit
+2014-11-12 10:46:29,091 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-12 10:46:29,095 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139702679229720 for <Subprocess at 139702679512488 with name nginx in state STOPPING> (stdout)>
+2014-11-12 10:46:30,104 INFO stopped: nginx (exit status 0)
+2014-11-12 10:46:30,105 DEBG received SIGCLD indicating a child quit
+2014-11-12 10:49:15,236 CRIT Supervisor running as root (no user in config file)
+2014-11-12 10:49:15,236 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 10:49:15,236 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 10:49:15,251 INFO RPC interface 'supervisor' initialized
+2014-11-12 10:49:15,251 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 10:49:15,252 INFO supervisord started with pid 1
+2014-11-12 10:49:16,257 INFO spawned: 'nginx' with pid 10
+2014-11-12 10:49:16,261 INFO spawned: 'php5-fpm' with pid 11
+2014-11-12 10:49:16,271 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139967817505104 for <Subprocess at 139967817791752 with name nginx in state STARTING> (stderr)>
+2014-11-12 10:49:16,303 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139967817505392 for <Subprocess at 139967817791968 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 10:49:17,306 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 10:49:17,306 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:15:47,598 WARN received SIGTERM indicating exit request
+2014-11-12 11:15:47,599 DEBG killing php5-fpm (pid 11) with signal SIGTERM
+2014-11-12 11:15:47,600 INFO waiting for nginx, php5-fpm to die
+2014-11-12 11:15:47,607 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 139967817529608 for <Subprocess at 139967817791968 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 11:15:47,607 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 11:15:47,608 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:15:47,609 DEBG killing nginx (pid 10) with signal SIGTERM
+2014-11-12 11:15:47,613 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139967817504888 for <Subprocess at 139967817791752 with name nginx in state STOPPING> (stdout)>
+2014-11-12 11:15:48,616 INFO stopped: nginx (exit status 0)
+2014-11-12 11:15:48,616 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:15:49,564 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:15:49,565 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 11:15:49,565 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 11:15:49,578 INFO RPC interface 'supervisor' initialized
+2014-11-12 11:15:49,578 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 11:15:49,579 INFO supervisord started with pid 1
+2014-11-12 11:15:50,586 INFO spawned: 'nginx' with pid 9
+2014-11-12 11:15:50,588 INFO spawned: 'php5-fpm' with pid 10
+2014-11-12 11:15:50,596 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140363663333712 for <Subprocess at 140363663620360 with name nginx in state STARTING> (stderr)>
+2014-11-12 11:15:50,619 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140363663334000 for <Subprocess at 140363663620576 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 11:15:51,623 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:15:51,624 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:16:07,891 WARN received SIGTERM indicating exit request
+2014-11-12 11:16:07,892 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-12 11:16:07,892 INFO waiting for nginx, php5-fpm to die
+2014-11-12 11:16:07,899 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140363663358216 for <Subprocess at 140363663620576 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 11:16:07,899 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 11:16:07,899 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:16:07,900 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-12 11:16:07,904 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140363663333496 for <Subprocess at 140363663620360 with name nginx in state STOPPING> (stdout)>
+2014-11-12 11:16:07,904 INFO stopped: nginx (exit status 0)
+2014-11-12 11:16:07,904 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:16:08,850 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:16:08,851 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 11:16:08,852 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 11:16:08,866 INFO RPC interface 'supervisor' initialized
+2014-11-12 11:16:08,866 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 11:16:08,867 INFO supervisord started with pid 1
+2014-11-12 11:16:09,872 INFO spawned: 'nginx' with pid 10
+2014-11-12 11:16:09,875 INFO spawned: 'php5-fpm' with pid 11
+2014-11-12 11:16:09,882 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140225443281232 for <Subprocess at 140225443567880 with name nginx in state STARTING> (stderr)>
+2014-11-12 11:16:09,907 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140225443281520 for <Subprocess at 140225443568096 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 11:16:10,909 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:16:10,910 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:18:40,807 WARN received SIGTERM indicating exit request
+2014-11-12 11:18:40,808 DEBG killing php5-fpm (pid 11) with signal SIGTERM
+2014-11-12 11:18:40,808 INFO waiting for nginx, php5-fpm to die
+2014-11-12 11:18:40,815 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140225443305736 for <Subprocess at 140225443568096 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 11:18:40,815 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 11:18:40,816 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:18:40,816 DEBG killing nginx (pid 10) with signal SIGTERM
+2014-11-12 11:18:40,819 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140225443281016 for <Subprocess at 140225443567880 with name nginx in state STOPPING> (stdout)>
+2014-11-12 11:18:40,819 INFO stopped: nginx (exit status 0)
+2014-11-12 11:18:40,820 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:18:41,747 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:18:41,747 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 11:18:41,747 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 11:18:41,773 INFO RPC interface 'supervisor' initialized
+2014-11-12 11:18:41,773 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 11:18:41,773 INFO supervisord started with pid 1
+2014-11-12 11:18:42,779 INFO spawned: 'nginx' with pid 9
+2014-11-12 11:18:42,783 INFO spawned: 'php5-fpm' with pid 10
+2014-11-12 11:18:42,792 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140170438519120 for <Subprocess at 140170438805768 with name nginx in state STARTING> (stderr)>
+2014-11-12 11:18:42,815 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140170438519408 for <Subprocess at 140170438805984 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 11:18:43,818 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:18:43,819 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:19:07,557 WARN received SIGTERM indicating exit request
+2014-11-12 11:19:07,558 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-12 11:19:07,558 INFO waiting for nginx, php5-fpm to die
+2014-11-12 11:19:07,565 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140170438543624 for <Subprocess at 140170438805984 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 11:19:07,566 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 11:19:07,566 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:19:07,566 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-12 11:19:07,569 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140170438518904 for <Subprocess at 140170438805768 with name nginx in state STOPPING> (stdout)>
+2014-11-12 11:19:07,569 INFO stopped: nginx (exit status 0)
+2014-11-12 11:19:07,569 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:21:30,255 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:21:30,255 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 11:21:30,255 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 11:21:30,269 INFO RPC interface 'supervisor' initialized
+2014-11-12 11:21:30,269 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 11:21:30,270 INFO supervisord started with pid 1
+2014-11-12 11:21:31,276 INFO spawned: 'nginx' with pid 9
+2014-11-12 11:21:31,280 INFO spawned: 'php5-fpm' with pid 10
+2014-11-12 11:21:31,289 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140122712652112 for <Subprocess at 140122712938760 with name nginx in state STARTING> (stderr)>
+2014-11-12 11:21:31,323 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140122712652400 for <Subprocess at 140122712938976 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 11:21:32,326 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:21:32,326 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:21:43,377 WARN received SIGTERM indicating exit request
+2014-11-12 11:21:43,377 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-12 11:21:43,377 INFO waiting for nginx, php5-fpm to die
+2014-11-12 11:21:43,384 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140122712676616 for <Subprocess at 140122712938976 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 11:21:43,384 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 11:21:43,384 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:21:43,386 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-12 11:21:43,390 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140122712651896 for <Subprocess at 140122712938760 with name nginx in state STOPPING> (stdout)>
+2014-11-12 11:21:43,390 INFO stopped: nginx (exit status 0)
+2014-11-12 11:21:43,390 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:21:44,307 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:21:44,307 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 11:21:44,307 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 11:21:44,322 INFO RPC interface 'supervisor' initialized
+2014-11-12 11:21:44,322 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 11:21:44,323 INFO supervisord started with pid 1
+2014-11-12 11:21:45,330 INFO spawned: 'nginx' with pid 10
+2014-11-12 11:21:45,333 INFO spawned: 'php5-fpm' with pid 11
+2014-11-12 11:21:45,340 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140236500109648 for <Subprocess at 140236500396296 with name nginx in state STARTING> (stderr)>
+2014-11-12 11:21:45,364 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140236500109936 for <Subprocess at 140236500396512 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 11:21:46,367 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:21:46,367 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:28:48,669 WARN received SIGTERM indicating exit request
+2014-11-12 11:28:48,670 DEBG killing php5-fpm (pid 11) with signal SIGTERM
+2014-11-12 11:28:48,670 INFO waiting for nginx, php5-fpm to die
+2014-11-12 11:28:48,677 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140236500134152 for <Subprocess at 140236500396512 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 11:28:48,677 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 11:28:48,677 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:28:48,678 DEBG killing nginx (pid 10) with signal SIGTERM
+2014-11-12 11:28:48,681 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140236500109432 for <Subprocess at 140236500396296 with name nginx in state STOPPING> (stdout)>
+2014-11-12 11:28:48,682 INFO stopped: nginx (exit status 0)
+2014-11-12 11:28:48,683 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:32:42,433 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:32:42,434 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 11:32:42,434 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 11:32:42,449 INFO RPC interface 'supervisor' initialized
+2014-11-12 11:32:42,449 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 11:32:42,449 INFO supervisord started with pid 1
+2014-11-12 11:32:43,455 INFO spawned: 'nginx' with pid 10
+2014-11-12 11:32:43,458 INFO spawned: 'php5-fpm' with pid 11
+2014-11-12 11:32:43,468 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139875550071120 for <Subprocess at 139875550357768 with name nginx in state STARTING> (stderr)>
+2014-11-12 11:32:43,490 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139875550071408 for <Subprocess at 139875550357984 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 11:32:44,492 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:32:44,492 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:41:51,532 WARN received SIGTERM indicating exit request
+2014-11-12 11:41:51,533 DEBG killing php5-fpm (pid 11) with signal SIGTERM
+2014-11-12 11:41:51,533 INFO waiting for nginx, php5-fpm to die
+2014-11-12 11:41:51,541 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 139875550095624 for <Subprocess at 139875550357984 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 11:41:51,541 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 11:41:51,542 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:41:51,542 DEBG killing nginx (pid 10) with signal SIGTERM
+2014-11-12 11:41:51,545 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139875550070904 for <Subprocess at 139875550357768 with name nginx in state STOPPING> (stdout)>
+2014-11-12 11:41:51,547 INFO stopped: nginx (exit status 0)
+2014-11-12 11:41:51,547 DEBG received SIGCLD indicating a child quit
+2014-11-12 11:41:52,475 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:41:52,475 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 11:41:52,475 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 11:41:52,489 INFO RPC interface 'supervisor' initialized
+2014-11-12 11:41:52,490 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 11:41:52,490 INFO supervisord started with pid 1
+2014-11-12 11:41:53,497 INFO spawned: 'nginx' with pid 9
+2014-11-12 11:41:53,502 INFO spawned: 'php5-fpm' with pid 10
+2014-11-12 11:41:53,510 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140363620272464 for <Subprocess at 140363620559112 with name nginx in state STARTING> (stderr)>
+2014-11-12 11:41:53,534 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140363620272752 for <Subprocess at 140363620559328 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 11:41:54,538 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:41:54,538 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 12:34:10,890 WARN received SIGTERM indicating exit request
+2014-11-12 12:34:10,890 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-12 12:34:10,891 INFO waiting for nginx, php5-fpm to die
+2014-11-12 12:34:10,899 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140363620296968 for <Subprocess at 140363620559328 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 12:34:10,900 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 12:34:10,900 DEBG received SIGCLD indicating a child quit
+2014-11-12 12:34:10,900 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-12 12:34:10,904 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140363620272248 for <Subprocess at 140363620559112 with name nginx in state STOPPING> (stdout)>
+2014-11-12 12:34:10,907 INFO stopped: nginx (exit status 0)
+2014-11-12 12:34:10,907 DEBG received SIGCLD indicating a child quit
+2014-11-12 12:34:11,943 CRIT Supervisor running as root (no user in config file)
+2014-11-12 12:34:11,943 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 12:34:11,943 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 12:34:11,958 INFO RPC interface 'supervisor' initialized
+2014-11-12 12:34:11,959 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 12:34:11,959 INFO supervisord started with pid 1
+2014-11-12 12:34:12,967 INFO spawned: 'nginx' with pid 9
+2014-11-12 12:34:12,970 INFO spawned: 'php5-fpm' with pid 10
+2014-11-12 12:34:12,979 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140058250889552 for <Subprocess at 140058251176200 with name nginx in state STARTING> (stderr)>
+2014-11-12 12:34:13,001 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140058250889840 for <Subprocess at 140058251176416 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 12:34:14,003 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 12:34:14,004 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 12:35:05,456 WARN received SIGTERM indicating exit request
+2014-11-12 12:35:05,456 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-12 12:35:05,456 INFO waiting for nginx, php5-fpm to die
+2014-11-12 12:35:05,463 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140058250914056 for <Subprocess at 140058251176416 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 12:35:05,463 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 12:35:05,463 DEBG received SIGCLD indicating a child quit
+2014-11-12 12:35:05,464 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-12 12:35:05,466 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140058250889336 for <Subprocess at 140058251176200 with name nginx in state STOPPING> (stdout)>
+2014-11-12 12:35:05,467 INFO stopped: nginx (exit status 0)
+2014-11-12 12:35:05,467 DEBG received SIGCLD indicating a child quit
+2014-11-12 12:35:06,436 CRIT Supervisor running as root (no user in config file)
+2014-11-12 12:35:06,436 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 12:35:06,437 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 12:35:06,451 INFO RPC interface 'supervisor' initialized
+2014-11-12 12:35:06,452 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 12:35:06,452 INFO supervisord started with pid 1
+2014-11-12 12:35:07,460 INFO spawned: 'nginx' with pid 9
+2014-11-12 12:35:07,464 INFO spawned: 'php5-fpm' with pid 10
+2014-11-12 12:35:07,472 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140029919832400 for <Subprocess at 140029920119048 with name nginx in state STARTING> (stderr)>
+2014-11-12 12:35:07,495 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140029919832688 for <Subprocess at 140029920119264 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 12:35:08,501 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 12:35:08,501 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 12:55:18,624 WARN received SIGTERM indicating exit request
+2014-11-12 12:55:18,624 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-12 12:55:18,625 INFO waiting for nginx, php5-fpm to die
+2014-11-12 12:55:18,632 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140029919856904 for <Subprocess at 140029920119264 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 12:55:18,632 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 12:55:18,633 DEBG received SIGCLD indicating a child quit
+2014-11-12 12:55:18,634 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-12 12:55:18,636 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140029919832184 for <Subprocess at 140029920119048 with name nginx in state STOPPING> (stdout)>
+2014-11-12 12:55:18,637 INFO stopped: nginx (exit status 0)
+2014-11-12 12:55:18,637 DEBG received SIGCLD indicating a child quit
+2014-11-12 12:55:19,595 CRIT Supervisor running as root (no user in config file)
+2014-11-12 12:55:19,595 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 12:55:19,595 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 12:55:19,612 INFO RPC interface 'supervisor' initialized
+2014-11-12 12:55:19,613 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 12:55:19,614 INFO supervisord started with pid 1
+2014-11-12 12:55:20,620 INFO spawned: 'nginx' with pid 9
+2014-11-12 12:55:20,623 INFO spawned: 'php5-fpm' with pid 10
+2014-11-12 12:55:20,631 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139684657031504 for <Subprocess at 139684657318152 with name nginx in state STARTING> (stderr)>
+2014-11-12 12:55:20,655 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139684657031792 for <Subprocess at 139684657318368 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 12:55:21,658 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 12:55:21,658 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 12:58:09,518 WARN received SIGTERM indicating exit request
+2014-11-12 12:58:09,519 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-12 12:58:09,519 INFO waiting for nginx, php5-fpm to die
+2014-11-12 12:58:09,525 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 139684657056008 for <Subprocess at 139684657318368 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 12:58:09,526 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 12:58:09,526 DEBG received SIGCLD indicating a child quit
+2014-11-12 12:58:09,526 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-12 12:58:09,529 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139684657031288 for <Subprocess at 139684657318152 with name nginx in state STOPPING> (stdout)>
+2014-11-12 12:58:09,529 INFO stopped: nginx (exit status 0)
+2014-11-12 12:58:09,529 DEBG received SIGCLD indicating a child quit
+2014-11-12 13:30:19,629 CRIT Supervisor running as root (no user in config file)
+2014-11-12 13:30:19,630 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 13:30:19,630 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 13:30:19,646 INFO RPC interface 'supervisor' initialized
+2014-11-12 13:30:19,646 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 13:30:19,646 INFO supervisord started with pid 1
+2014-11-12 13:30:20,654 INFO spawned: 'nginx' with pid 9
+2014-11-12 13:30:20,657 INFO spawned: 'php5-fpm' with pid 10
+2014-11-12 13:30:20,687 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140578410473808 for <Subprocess at 140578410760456 with name nginx in state STARTING> (stderr)>
+2014-11-12 13:30:20,765 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140578410474096 for <Subprocess at 140578410760672 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 13:30:21,772 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 13:30:21,773 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 14:33:09,343 WARN received SIGTERM indicating exit request
+2014-11-12 14:33:09,343 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-12 14:33:09,344 INFO waiting for nginx, php5-fpm to die
+2014-11-12 14:33:09,350 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140578410498312 for <Subprocess at 140578410760672 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-12 14:33:09,351 INFO stopped: php5-fpm (exit status 0)
+2014-11-12 14:33:09,351 DEBG received SIGCLD indicating a child quit
+2014-11-12 14:33:09,352 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-12 14:33:09,354 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140578410473592 for <Subprocess at 140578410760456 with name nginx in state STOPPING> (stdout)>
+2014-11-12 14:33:10,359 INFO stopped: nginx (exit status 0)
+2014-11-12 14:33:10,360 DEBG received SIGCLD indicating a child quit
+2014-11-12 14:33:22,963 CRIT Supervisor running as root (no user in config file)
+2014-11-12 14:33:22,963 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-12 14:33:22,963 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-12 14:33:22,975 INFO RPC interface 'supervisor' initialized
+2014-11-12 14:33:22,975 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-12 14:33:22,977 INFO supervisord started with pid 1
+2014-11-12 14:33:23,982 INFO spawned: 'nginx' with pid 9
+2014-11-12 14:33:23,985 INFO spawned: 'php5-fpm' with pid 10
+2014-11-12 14:33:23,993 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140374241020240 for <Subprocess at 140374241306888 with name nginx in state STARTING> (stderr)>
+2014-11-12 14:33:24,018 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140374241020528 for <Subprocess at 140374241307104 with name php5-fpm in state STARTING> (stdout)>
+2014-11-12 14:33:25,021 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 14:33:25,022 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 14:54:43,537 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140374241044744 for <Subprocess at 140374241307104 with name php5-fpm in state RUNNING> (stderr)>
+2014-11-12 14:54:43,537 INFO exited: php5-fpm (exit status 0; expected)
+2014-11-12 14:54:43,538 DEBG received SIGCLD indicating a child quit
+2014-11-12 14:59:32,710 CRIT reaped unknown pid 206)
+2014-11-12 14:59:32,710 DEBG received SIGCLD indicating a child quit
+2014-11-13 05:47:35,086 WARN received SIGTERM indicating exit request
+2014-11-13 05:47:35,087 INFO waiting for nginx to die
+2014-11-13 05:47:36,090 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-13 05:47:36,096 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140374241020024 for <Subprocess at 140374241306888 with name nginx in state STOPPING> (stdout)>
+2014-11-13 05:47:36,101 INFO stopped: nginx (exit status 0)
+2014-11-13 05:47:36,101 DEBG received SIGCLD indicating a child quit
+2014-11-13 05:48:26,535 CRIT Supervisor running as root (no user in config file)
+2014-11-13 05:48:26,536 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-13 05:48:26,536 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-13 05:48:26,550 INFO RPC interface 'supervisor' initialized
+2014-11-13 05:48:26,551 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-13 05:48:26,552 INFO supervisord started with pid 1
+2014-11-13 05:48:27,558 INFO spawned: 'nginx' with pid 9
+2014-11-13 05:48:27,562 INFO spawned: 'php5-fpm' with pid 10
+2014-11-13 05:48:27,595 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139841692703344 for <Subprocess at 139841692989920 with name php5-fpm in state STARTING> (stdout)>
+2014-11-13 05:48:27,760 DEBG 'nginx' stderr output:
+nginx: [emerg] host not found in upstream "contact_api" in /etc/nginx/sites-enabled/default:15
+
+2014-11-13 05:48:27,761 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139841692703056 for <Subprocess at 139841692989704 with name nginx in state STARTING> (stderr)>
+2014-11-13 05:48:27,762 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139841692702840 for <Subprocess at 139841692989704 with name nginx in state STARTING> (stdout)>
+2014-11-13 05:48:27,762 INFO exited: nginx (exit status 1; not expected)
+2014-11-13 05:48:27,763 DEBG received SIGCLD indicating a child quit
+2014-11-13 05:48:28,769 INFO spawned: 'nginx' with pid 14
+2014-11-13 05:48:28,770 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-13 05:48:28,784 DEBG 'nginx' stderr output:
+nginx: [emerg] host not found in upstream "contact_api" in /etc/nginx/sites-enabled/default:15
+
+2014-11-13 05:48:28,785 DEBG fd 12 closed, stopped monitoring <POutputDispatcher at 139841692702984 for <Subprocess at 139841692989704 with name nginx in state STARTING> (stderr)>
+2014-11-13 05:48:28,786 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139841692703056 for <Subprocess at 139841692989704 with name nginx in state STARTING> (stdout)>
+2014-11-13 05:48:28,786 INFO exited: nginx (exit status 1; not expected)
+2014-11-13 05:48:28,786 DEBG received SIGCLD indicating a child quit
+2014-11-13 05:48:30,796 INFO spawned: 'nginx' with pid 15
+2014-11-13 05:48:30,814 DEBG 'nginx' stderr output:
+nginx: [emerg] host not found in upstream "contact_api" in /etc/nginx/sites-enabled/default:15
+
+2014-11-13 05:48:30,815 DEBG fd 12 closed, stopped monitoring <POutputDispatcher at 139841692702840 for <Subprocess at 139841692989704 with name nginx in state STARTING> (stderr)>
+2014-11-13 05:48:30,816 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139841692702984 for <Subprocess at 139841692989704 with name nginx in state STARTING> (stdout)>
+2014-11-13 05:48:30,817 INFO exited: nginx (exit status 1; not expected)
+2014-11-13 05:48:30,817 DEBG received SIGCLD indicating a child quit
+2014-11-13 05:48:33,829 INFO spawned: 'nginx' with pid 16
+2014-11-13 05:48:33,844 DEBG 'nginx' stderr output:
+nginx: [emerg] host not found in upstream "contact_api" in /etc/nginx/sites-enabled/default:15
+
+2014-11-13 05:48:33,845 DEBG fd 12 closed, stopped monitoring <POutputDispatcher at 139841692703272 for <Subprocess at 139841692989704 with name nginx in state STARTING> (stderr)>
+2014-11-13 05:48:33,845 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139841692702840 for <Subprocess at 139841692989704 with name nginx in state STARTING> (stdout)>
+2014-11-13 05:48:33,845 INFO exited: nginx (exit status 1; not expected)
+2014-11-13 05:48:33,846 DEBG received SIGCLD indicating a child quit
+2014-11-13 05:48:34,850 INFO gave up: nginx entered FATAL state, too many start retries too quickly
+2014-11-13 05:49:00,372 WARN received SIGTERM indicating exit request
+2014-11-13 05:49:00,373 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-13 05:49:00,373 INFO waiting for php5-fpm to die
+2014-11-13 05:49:00,380 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 139841692727560 for <Subprocess at 139841692989920 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-13 05:49:00,381 INFO stopped: php5-fpm (exit status 0)
+2014-11-13 05:49:00,381 DEBG received SIGCLD indicating a child quit
+2014-11-13 05:49:11,898 CRIT Supervisor running as root (no user in config file)
+2014-11-13 05:49:11,898 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-13 05:49:11,898 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-13 05:49:11,911 INFO RPC interface 'supervisor' initialized
+2014-11-13 05:49:11,912 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-13 05:49:11,912 INFO supervisord started with pid 1
+2014-11-13 05:49:12,915 INFO spawned: 'nginx' with pid 9
+2014-11-13 05:49:12,919 INFO spawned: 'php5-fpm' with pid 10
+2014-11-13 05:49:12,954 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140596664326912 for <Subprocess at 140596664605296 with name php5-fpm in state STARTING> (stdout)>
+2014-11-13 05:49:12,977 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140596664326624 for <Subprocess at 140596664605080 with name nginx in state STARTING> (stderr)>
+2014-11-13 05:49:13,981 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-13 05:49:13,983 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-13 05:51:36,209 WARN received SIGTERM indicating exit request
+2014-11-13 05:51:36,209 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-13 05:51:36,209 INFO waiting for nginx, php5-fpm to die
+2014-11-13 05:51:36,218 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140596664351128 for <Subprocess at 140596664605296 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-13 05:51:36,218 INFO stopped: php5-fpm (exit status 0)
+2014-11-13 05:51:36,219 DEBG received SIGCLD indicating a child quit
+2014-11-13 05:51:36,219 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-13 05:51:36,223 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140596664326408 for <Subprocess at 140596664605080 with name nginx in state STOPPING> (stdout)>
+2014-11-13 05:51:36,224 INFO stopped: nginx (exit status 0)
+2014-11-13 05:51:36,224 DEBG received SIGCLD indicating a child quit
+2014-11-13 05:53:53,506 CRIT Supervisor running as root (no user in config file)
+2014-11-13 05:53:53,506 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-13 05:53:53,506 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-13 05:53:53,519 INFO RPC interface 'supervisor' initialized
+2014-11-13 05:53:53,520 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-13 05:53:53,520 INFO supervisord started with pid 1
+2014-11-13 05:53:54,526 INFO spawned: 'nginx' with pid 9
+2014-11-13 05:53:54,529 INFO spawned: 'php5-fpm' with pid 10
+2014-11-13 05:53:54,564 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139914444966656 for <Subprocess at 139914445245040 with name php5-fpm in state STARTING> (stdout)>
+2014-11-13 05:53:54,575 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139914444966368 for <Subprocess at 139914445244824 with name nginx in state STARTING> (stderr)>
+2014-11-13 05:53:55,579 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-13 05:53:55,579 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-13 05:55:39,383 WARN received SIGTERM indicating exit request
+2014-11-13 05:55:39,384 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-13 05:55:39,384 INFO waiting for nginx, php5-fpm to die
+2014-11-13 05:55:39,390 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 139914444990872 for <Subprocess at 139914445245040 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-13 05:55:39,391 INFO stopped: php5-fpm (exit status 0)
+2014-11-13 05:55:39,392 DEBG received SIGCLD indicating a child quit
+2014-11-13 05:55:39,393 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-13 05:55:39,395 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139914444966152 for <Subprocess at 139914445244824 with name nginx in state STOPPING> (stdout)>
+2014-11-13 05:55:39,396 INFO stopped: nginx (exit status 0)
+2014-11-13 05:55:39,396 DEBG received SIGCLD indicating a child quit
+2014-11-17 10:36:00,262 CRIT Supervisor running as root (no user in config file)
+2014-11-17 10:36:00,262 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-17 10:36:00,263 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-17 10:36:00,286 INFO RPC interface 'supervisor' initialized
+2014-11-17 10:36:00,287 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-17 10:36:00,287 INFO supervisord started with pid 1
+2014-11-17 10:36:01,293 INFO spawned: 'nginx' with pid 9
+2014-11-17 10:36:01,298 INFO spawned: 'php5-fpm' with pid 10
+2014-11-17 10:36:01,417 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140368683895120 for <Subprocess at 140368684181768 with name nginx in state STARTING> (stderr)>
+2014-11-17 10:36:01,724 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140368683895408 for <Subprocess at 140368684181984 with name php5-fpm in state STARTING> (stdout)>
+2014-11-17 10:36:02,727 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 10:36:02,728 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 10:37:32,043 WARN received SIGTERM indicating exit request
+2014-11-17 10:37:32,043 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-17 10:37:32,044 INFO waiting for nginx, php5-fpm to die
+2014-11-17 10:37:32,075 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140368683919624 for <Subprocess at 140368684181984 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-17 10:37:32,075 INFO stopped: php5-fpm (exit status 0)
+2014-11-17 10:37:32,075 DEBG received SIGCLD indicating a child quit
+2014-11-17 10:37:32,078 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-17 10:37:32,080 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140368683894904 for <Subprocess at 140368684181768 with name nginx in state STOPPING> (stdout)>
+2014-11-17 10:37:32,081 INFO stopped: nginx (exit status 0)
+2014-11-17 10:37:32,081 DEBG received SIGCLD indicating a child quit
+2014-11-17 10:39:26,249 CRIT Supervisor running as root (no user in config file)
+2014-11-17 10:39:26,249 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-17 10:39:26,250 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-17 10:39:26,265 INFO RPC interface 'supervisor' initialized
+2014-11-17 10:39:26,266 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-17 10:39:26,266 INFO supervisord started with pid 1
+2014-11-17 10:39:27,270 INFO spawned: 'nginx' with pid 9
+2014-11-17 10:39:27,272 INFO spawned: 'php5-fpm' with pid 10
+2014-11-17 10:39:27,281 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140642612918608 for <Subprocess at 140642613205256 with name nginx in state STARTING> (stderr)>
+2014-11-17 10:39:27,310 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140642612918896 for <Subprocess at 140642613205472 with name php5-fpm in state STARTING> (stdout)>
+2014-11-17 10:39:28,312 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 10:39:28,313 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:25:32,202 WARN received SIGTERM indicating exit request
+2014-11-17 11:25:32,202 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-17 11:25:32,202 INFO waiting for nginx, php5-fpm to die
+2014-11-17 11:25:32,210 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140642612943112 for <Subprocess at 140642613205472 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-17 11:25:32,210 INFO stopped: php5-fpm (exit status 0)
+2014-11-17 11:25:32,211 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:25:32,212 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-17 11:25:32,217 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140642612918392 for <Subprocess at 140642613205256 with name nginx in state STOPPING> (stdout)>
+2014-11-17 11:25:32,217 INFO stopped: nginx (exit status 0)
+2014-11-17 11:25:32,217 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:25:33,177 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:25:33,177 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-17 11:25:33,178 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-17 11:25:33,192 INFO RPC interface 'supervisor' initialized
+2014-11-17 11:25:33,192 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-17 11:25:33,192 INFO supervisord started with pid 1
+2014-11-17 11:25:34,200 INFO spawned: 'nginx' with pid 10
+2014-11-17 11:25:34,203 INFO spawned: 'php5-fpm' with pid 11
+2014-11-17 11:25:34,212 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140123777509352 for <Subprocess at 140123777800096 with name nginx in state STARTING> (stderr)>
+2014-11-17 11:25:34,237 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140123777509640 for <Subprocess at 140123777800312 with name php5-fpm in state STARTING> (stdout)>
+2014-11-17 11:25:35,244 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:25:35,244 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:29:26,609 WARN received SIGTERM indicating exit request
+2014-11-17 11:29:26,610 DEBG killing php5-fpm (pid 11) with signal SIGTERM
+2014-11-17 11:29:26,610 INFO waiting for nginx, php5-fpm to die
+2014-11-17 11:29:26,618 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140123777534720 for <Subprocess at 140123777800312 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-17 11:29:26,618 INFO stopped: php5-fpm (exit status 0)
+2014-11-17 11:29:26,618 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:29:26,619 DEBG killing nginx (pid 10) with signal SIGTERM
+2014-11-17 11:29:26,622 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140123777509136 for <Subprocess at 140123777800096 with name nginx in state STOPPING> (stdout)>
+2014-11-17 11:29:26,623 INFO stopped: nginx (exit status 0)
+2014-11-17 11:29:26,623 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:29:27,681 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:29:27,681 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-17 11:29:27,682 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-17 11:29:27,694 INFO RPC interface 'supervisor' initialized
+2014-11-17 11:29:27,695 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-17 11:29:27,698 INFO supervisord started with pid 1
+2014-11-17 11:29:28,710 INFO spawned: 'nginx' with pid 9
+2014-11-17 11:29:28,713 INFO spawned: 'php5-fpm' with pid 10
+2014-11-17 11:29:28,723 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140473572362216 for <Subprocess at 140473572652960 with name nginx in state STARTING> (stderr)>
+2014-11-17 11:29:28,750 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140473572362504 for <Subprocess at 140473572653176 with name php5-fpm in state STARTING> (stdout)>
+2014-11-17 11:29:29,753 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:29:29,754 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:30:51,329 WARN received SIGTERM indicating exit request
+2014-11-17 11:30:51,329 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-17 11:30:51,330 INFO waiting for nginx, php5-fpm to die
+2014-11-17 11:30:51,338 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140473572387584 for <Subprocess at 140473572653176 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-17 11:30:51,339 INFO stopped: php5-fpm (exit status 0)
+2014-11-17 11:30:51,339 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:30:51,340 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-17 11:30:51,344 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140473572362000 for <Subprocess at 140473572652960 with name nginx in state STOPPING> (stdout)>
+2014-11-17 11:30:51,344 INFO stopped: nginx (exit status 0)
+2014-11-17 11:30:51,344 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:30:52,280 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:30:52,280 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-17 11:30:52,281 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-17 11:30:52,293 INFO RPC interface 'supervisor' initialized
+2014-11-17 11:30:52,293 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-17 11:30:52,294 INFO supervisord started with pid 1
+2014-11-17 11:30:53,306 INFO spawned: 'nginx' with pid 9
+2014-11-17 11:30:53,310 INFO spawned: 'php5-fpm' with pid 10
+2014-11-17 11:30:53,317 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140531185678312 for <Subprocess at 140531185969056 with name nginx in state STARTING> (stderr)>
+2014-11-17 11:30:53,341 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140531185678600 for <Subprocess at 140531185969272 with name php5-fpm in state STARTING> (stdout)>
+2014-11-17 11:30:54,346 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:30:54,347 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:32:04,898 WARN received SIGTERM indicating exit request
+2014-11-17 11:32:04,898 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-17 11:32:04,900 INFO waiting for nginx, php5-fpm to die
+2014-11-17 11:32:04,907 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140531185703680 for <Subprocess at 140531185969272 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-17 11:32:04,907 INFO stopped: php5-fpm (exit status 0)
+2014-11-17 11:32:04,908 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:32:04,908 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-17 11:32:04,912 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140531185678096 for <Subprocess at 140531185969056 with name nginx in state STOPPING> (stdout)>
+2014-11-17 11:32:04,913 INFO stopped: nginx (exit status 0)
+2014-11-17 11:32:04,913 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:32:05,917 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:32:05,917 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-17 11:32:05,917 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-17 11:32:05,931 INFO RPC interface 'supervisor' initialized
+2014-11-17 11:32:05,932 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-17 11:32:05,932 INFO supervisord started with pid 1
+2014-11-17 11:32:06,939 INFO spawned: 'nginx' with pid 9
+2014-11-17 11:32:06,942 INFO spawned: 'php5-fpm' with pid 10
+2014-11-17 11:32:06,951 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140657637885928 for <Subprocess at 140657638176672 with name nginx in state STARTING> (stderr)>
+2014-11-17 11:32:06,978 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140657637886216 for <Subprocess at 140657638176888 with name php5-fpm in state STARTING> (stdout)>
+2014-11-17 11:32:07,982 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:32:07,983 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:39:54,754 WARN received SIGTERM indicating exit request
+2014-11-17 11:39:54,754 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-17 11:39:54,755 INFO waiting for nginx, php5-fpm to die
+2014-11-17 11:39:54,764 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 140657637911296 for <Subprocess at 140657638176888 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-17 11:39:54,765 INFO stopped: php5-fpm (exit status 0)
+2014-11-17 11:39:54,765 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:39:54,767 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-17 11:39:54,771 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140657637885712 for <Subprocess at 140657638176672 with name nginx in state STOPPING> (stdout)>
+2014-11-17 11:39:54,772 INFO stopped: nginx (exit status 0)
+2014-11-17 11:39:54,772 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:39:55,839 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:39:55,839 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-17 11:39:55,840 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-17 11:39:55,854 INFO RPC interface 'supervisor' initialized
+2014-11-17 11:39:55,855 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-17 11:39:55,857 INFO supervisord started with pid 1
+2014-11-17 11:39:56,864 INFO spawned: 'nginx' with pid 10
+2014-11-17 11:39:56,868 INFO spawned: 'php5-fpm' with pid 11
+2014-11-17 11:39:56,877 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139995097323496 for <Subprocess at 139995097614240 with name nginx in state STARTING> (stderr)>
+2014-11-17 11:39:56,900 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139995097323784 for <Subprocess at 139995097614456 with name php5-fpm in state STARTING> (stdout)>
+2014-11-17 11:39:57,904 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:39:57,907 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:45:35,799 WARN received SIGTERM indicating exit request
+2014-11-17 11:45:35,800 DEBG killing php5-fpm (pid 11) with signal SIGTERM
+2014-11-17 11:45:35,800 INFO waiting for nginx, php5-fpm to die
+2014-11-17 11:45:35,809 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 139995097348864 for <Subprocess at 139995097614456 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-17 11:45:35,809 INFO stopped: php5-fpm (exit status 0)
+2014-11-17 11:45:35,810 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:45:35,810 DEBG killing nginx (pid 10) with signal SIGTERM
+2014-11-17 11:45:35,815 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139995097323280 for <Subprocess at 139995097614240 with name nginx in state STOPPING> (stdout)>
+2014-11-17 11:45:35,818 INFO stopped: nginx (exit status 0)
+2014-11-17 11:45:35,819 DEBG received SIGCLD indicating a child quit
+2014-11-17 11:45:49,595 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:45:49,595 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-17 11:45:49,597 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-17 11:45:49,612 INFO RPC interface 'supervisor' initialized
+2014-11-17 11:45:49,612 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-17 11:45:49,612 INFO supervisord started with pid 1
+2014-11-17 11:45:50,618 INFO spawned: 'nginx' with pid 9
+2014-11-17 11:45:50,623 INFO spawned: 'php5-fpm' with pid 10
+2014-11-17 11:45:50,638 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139965293042000 for <Subprocess at 139965293328648 with name nginx in state STARTING> (stderr)>
+2014-11-17 11:45:50,659 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139965293042288 for <Subprocess at 139965293328864 with name php5-fpm in state STARTING> (stdout)>
+2014-11-17 11:45:51,662 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:45:51,662 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 12:10:14,698 WARN received SIGTERM indicating exit request
+2014-11-17 12:10:14,699 DEBG killing php5-fpm (pid 10) with signal SIGTERM
+2014-11-17 12:10:14,700 INFO waiting for nginx, php5-fpm to die
+2014-11-17 12:10:14,708 DEBG fd 15 closed, stopped monitoring <POutputDispatcher at 139965293066504 for <Subprocess at 139965293328864 with name php5-fpm in state STOPPING> (stderr)>
+2014-11-17 12:10:14,709 INFO stopped: php5-fpm (exit status 0)
+2014-11-17 12:10:14,709 DEBG received SIGCLD indicating a child quit
+2014-11-17 12:10:14,710 DEBG killing nginx (pid 9) with signal SIGTERM
+2014-11-17 12:10:14,713 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139965293041784 for <Subprocess at 139965293328648 with name nginx in state STOPPING> (stdout)>
+2014-11-17 12:10:14,718 INFO stopped: nginx (exit status 0)
+2014-11-17 12:10:14,718 DEBG received SIGCLD indicating a child quit
+2014-11-17 12:10:35,107 CRIT Supervisor running as root (no user in config file)
+2014-11-17 12:10:35,107 WARN Included extra file "/etc/supervisor/conf.d/php5-fpm.conf" during parsing
+2014-11-17 12:10:35,108 WARN Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2014-11-17 12:10:35,120 INFO RPC interface 'supervisor' initialized
+2014-11-17 12:10:35,121 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2014-11-17 12:10:35,121 INFO supervisord started with pid 1
+2014-11-17 12:10:36,130 INFO spawned: 'nginx' with pid 9
+2014-11-17 12:10:36,139 INFO spawned: 'php5-fpm' with pid 10
+2014-11-17 12:10:36,147 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140489832880464 for <Subprocess at 140489833167112 with name nginx in state STARTING> (stderr)>
+2014-11-17 12:10:36,174 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140489832880752 for <Subprocess at 140489833167328 with name php5-fpm in state STARTING> (stdout)>
+2014-11-17 12:10:37,178 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 12:10:37,178 INFO success: php5-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

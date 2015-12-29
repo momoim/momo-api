@@ -1,0 +1,50 @@
+redis:
+  restart: always
+  image: redis
+  command: redis-server --appendonly yes
+  volumes:
+    - ./data/redis:/data
+
+memcached:
+  restart: always
+  image: memcached
+
+mongo:
+  restart: always
+  image: mongo
+  volumes:
+      - ./data/mongo:/data/db
+
+mysql:
+  restart: always
+  image: mariadb:latest
+  environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=momo_v3
+  volumes:
+      - ./data/mysql:/var/lib/mysql
+  ports:
+    - "3310:3306"
+
+fpm:
+  restart: always
+  build: ./php/
+  links:
+    - mongo
+    - mysql
+    - redis
+    - memcached
+  volumes:
+    - ./web:/var/www/html
+
+nginx:
+  restart: always
+  image: nginx:latest
+  ports:
+    - "8090:80"
+  links:
+    - fpm:fpm
+  volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+  volumes_from:
+      - fpm

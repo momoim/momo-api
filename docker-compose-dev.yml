@@ -1,0 +1,46 @@
+redis:
+  restart: always
+  image: index.alauda.cn/library/redis
+  command: redis-server --appendonly yes
+  volumes:
+    - ./data/redis:/data
+
+memcached:
+  restart: always
+  image: index.alauda.cn/library/memcached
+
+mongo:
+  restart: always
+  image: index.alauda.cn/library/mongo
+
+fpm:
+  build: ./php/
+
+fpm-dev:
+  restart: always
+  build: ./php-dev/
+  ports:
+      - "2402:22"
+  links:
+    - mongo
+    - memcached
+    - redis
+
+  external_links:
+    - docker_mysql_1:mysql
+  volumes:
+    - ./web:/var/www/html
+  dns: 192.168.99.1
+
+
+nginx:
+  restart: always
+  image: index.alauda.cn/library/nginx:latest
+  ports:
+    - "8080:80"
+  links:
+    - fpm-dev:fpm
+  volumes:
+    - ./nginx/conf.d:/etc/nginx/conf.d
+  volumes_from:
+    - fpm-dev

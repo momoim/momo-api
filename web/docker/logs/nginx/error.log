@@ -1,0 +1,4 @@
+2014/11/13 05:48:27 [emerg] 9#0: host not found in upstream "contact_api" in /etc/nginx/sites-enabled/default:15
+2014/11/13 05:48:28 [emerg] 14#0: host not found in upstream "contact_api" in /etc/nginx/sites-enabled/default:15
+2014/11/13 05:48:30 [emerg] 15#0: host not found in upstream "contact_api" in /etc/nginx/sites-enabled/default:15
+2014/11/13 05:48:33 [emerg] 16#0: host not found in upstream "contact_api" in /etc/nginx/sites-enabled/default:15

@@ -1,0 +1,281 @@
+2014-11-11 14:02:39,414 CRIT Supervisor running as root (no user in config file)
+2014-11-11 14:02:39,431 INFO supervisord started with pid 1
+2014-11-11 14:02:40,436 INFO spawned: 'contact_api' with pid 9
+2014-11-11 14:02:41,753 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 14:03:17,819 WARN received SIGTERM indicating exit request
+2014-11-11 14:03:17,820 INFO waiting for contact_api to die
+2014-11-11 14:03:18,829 INFO stopped: contact_api (exit status 0)
+2014-11-11 14:07:34,102 CRIT Supervisor running as root (no user in config file)
+2014-11-11 14:07:34,120 INFO supervisord started with pid 1
+2014-11-11 14:07:35,127 INFO spawned: 'contact_api' with pid 9
+2014-11-11 14:07:36,433 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 16:10:01,234 WARN received SIGTERM indicating exit request
+2014-11-11 16:10:01,236 INFO waiting for contact_api to die
+2014-11-11 16:10:02,243 INFO stopped: contact_api (exit status 0)
+2014-11-11 16:10:03,192 CRIT Supervisor running as root (no user in config file)
+2014-11-11 16:10:03,211 INFO supervisord started with pid 1
+2014-11-11 16:10:04,217 INFO spawned: 'contact_api' with pid 10
+2014-11-11 16:10:05,521 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 16:10:29,529 WARN received SIGTERM indicating exit request
+2014-11-11 16:10:29,530 INFO waiting for contact_api to die
+2014-11-11 16:10:30,538 INFO stopped: contact_api (exit status 0)
+2014-11-11 16:10:31,522 CRIT Supervisor running as root (no user in config file)
+2014-11-11 16:10:31,536 INFO supervisord started with pid 1
+2014-11-11 16:10:32,541 INFO spawned: 'contact_api' with pid 10
+2014-11-11 16:10:33,811 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-11 20:19:35,618 WARN received SIGTERM indicating exit request
+2014-11-11 20:19:35,621 INFO waiting for contact_api to die
+2014-11-11 20:19:36,626 INFO stopped: contact_api (exit status 0)
+2014-11-11 20:19:37,579 CRIT Supervisor running as root (no user in config file)
+2014-11-11 20:19:37,598 INFO supervisord started with pid 1
+2014-11-11 20:19:38,603 INFO spawned: 'contact_api' with pid 9
+2014-11-11 20:19:39,891 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 10:37:29,773 WARN received SIGTERM indicating exit request
+2014-11-12 10:37:29,773 INFO waiting for contact_api to die
+2014-11-12 10:37:30,780 INFO stopped: contact_api (exit status 0)
+2014-11-12 10:37:31,664 CRIT Supervisor running as root (no user in config file)
+2014-11-12 10:37:31,680 INFO supervisord started with pid 1
+2014-11-12 10:37:32,697 INFO spawned: 'contact_api' with pid 9
+2014-11-12 10:37:33,972 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 10:41:17,378 WARN received SIGTERM indicating exit request
+2014-11-12 10:41:17,379 INFO waiting for contact_api to die
+2014-11-12 10:41:18,384 INFO stopped: contact_api (exit status 0)
+2014-11-12 10:41:19,304 CRIT Supervisor running as root (no user in config file)
+2014-11-12 10:41:19,320 INFO supervisord started with pid 1
+2014-11-12 10:41:20,324 INFO spawned: 'contact_api' with pid 9
+2014-11-12 10:41:21,576 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 10:46:30,365 WARN received SIGTERM indicating exit request
+2014-11-12 10:46:30,365 INFO waiting for contact_api to die
+2014-11-12 10:46:31,373 INFO stopped: contact_api (exit status 0)
+2014-11-12 10:49:14,529 CRIT Supervisor running as root (no user in config file)
+2014-11-12 10:49:14,550 INFO supervisord started with pid 1
+2014-11-12 10:49:15,555 INFO spawned: 'contact_api' with pid 9
+2014-11-12 10:49:16,835 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:15:45,464 WARN received SIGTERM indicating exit request
+2014-11-12 11:15:45,464 INFO waiting for contact_api to die
+2014-11-12 11:15:46,469 INFO stopped: contact_api (exit status 0)
+2014-11-12 11:15:47,397 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:15:47,411 INFO supervisord started with pid 1
+2014-11-12 11:15:48,415 INFO spawned: 'contact_api' with pid 9
+2014-11-12 11:15:49,681 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:16:05,793 WARN received SIGTERM indicating exit request
+2014-11-12 11:16:05,794 INFO waiting for contact_api to die
+2014-11-12 11:16:06,800 INFO stopped: contact_api (exit status 0)
+2014-11-12 11:16:07,656 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:16:07,669 INFO supervisord started with pid 1
+2014-11-12 11:16:08,675 INFO spawned: 'contact_api' with pid 9
+2014-11-12 11:16:09,962 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:18:38,670 WARN received SIGTERM indicating exit request
+2014-11-12 11:18:38,671 INFO waiting for contact_api to die
+2014-11-12 11:18:39,676 INFO stopped: contact_api (exit status 0)
+2014-11-12 11:18:40,582 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:18:40,595 INFO supervisord started with pid 1
+2014-11-12 11:18:41,600 INFO spawned: 'contact_api' with pid 9
+2014-11-12 11:18:42,882 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:19:07,823 WARN received SIGTERM indicating exit request
+2014-11-12 11:19:07,823 INFO waiting for contact_api to die
+2014-11-12 11:19:08,831 INFO stopped: contact_api (exit status 0)
+2014-11-12 11:19:36,713 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:19:36,727 INFO supervisord started with pid 1
+2014-11-12 11:19:37,732 INFO spawned: 'contact_api' with pid 9
+2014-11-12 11:19:39,025 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:20:47,843 WARN received SIGTERM indicating exit request
+2014-11-12 11:20:47,843 INFO waiting for contact_api to die
+2014-11-12 11:20:48,850 INFO stopped: contact_api (exit status 0)
+2014-11-12 11:20:49,734 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:20:49,749 INFO supervisord started with pid 1
+2014-11-12 11:20:50,755 INFO spawned: 'contact_api' with pid 9
+2014-11-12 11:20:52,009 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:21:27,645 WARN received SIGTERM indicating exit request
+2014-11-12 11:21:27,646 INFO waiting for contact_api to die
+2014-11-12 11:21:28,651 INFO stopped: contact_api (exit status 0)
+2014-11-12 11:21:29,639 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:21:29,651 INFO supervisord started with pid 1
+2014-11-12 11:21:30,656 INFO spawned: 'contact_api' with pid 9
+2014-11-12 11:21:31,917 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:21:41,225 WARN received SIGTERM indicating exit request
+2014-11-12 11:21:41,225 INFO waiting for contact_api to die
+2014-11-12 11:21:42,233 INFO stopped: contact_api (exit status 0)
+2014-11-12 11:21:43,165 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:21:43,179 INFO supervisord started with pid 1
+2014-11-12 11:21:44,184 INFO spawned: 'contact_api' with pid 9
+2014-11-12 11:21:45,464 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:28:48,945 WARN received SIGTERM indicating exit request
+2014-11-12 11:28:48,945 INFO waiting for contact_api to die
+2014-11-12 11:28:49,952 INFO stopped: contact_api (exit status 0)
+2014-11-12 11:29:16,355 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:29:16,373 INFO supervisord started with pid 1
+2014-11-12 11:29:17,380 INFO spawned: 'contact_api' with pid 9
+2014-11-12 11:29:18,712 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:30:09,126 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:30:09,140 INFO supervisord started with pid 1
+2014-11-12 11:30:10,146 INFO spawned: 'contact_api' with pid 10
+2014-11-12 11:30:11,424 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 11:32:08,728 WARN received SIGTERM indicating exit request
+2014-11-12 11:32:08,729 INFO waiting for contact_api to die
+2014-11-12 11:32:09,734 INFO stopped: contact_api (exit status 0)
+2014-11-12 11:32:10,264 WARN received SIGTERM indicating exit request
+2014-11-12 11:32:10,264 INFO waiting for contact_api to die
+2014-11-12 11:32:11,269 INFO stopped: contact_api (exit status 0)
+2014-11-12 11:32:41,790 CRIT Supervisor running as root (no user in config file)
+2014-11-12 11:32:41,808 INFO supervisord started with pid 1
+2014-11-12 11:32:42,813 INFO spawned: 'contact_api' with pid 9
+2014-11-12 11:32:44,139 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 12:34:08,692 WARN received SIGTERM indicating exit request
+2014-11-12 12:34:08,693 INFO waiting for contact_api to die
+2014-11-12 12:34:09,699 INFO stopped: contact_api (exit status 0)
+2014-11-12 12:34:10,665 CRIT Supervisor running as root (no user in config file)
+2014-11-12 12:34:10,684 INFO supervisord started with pid 1
+2014-11-12 12:34:11,688 INFO spawned: 'contact_api' with pid 10
+2014-11-12 12:34:12,977 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 12:35:03,295 WARN received SIGTERM indicating exit request
+2014-11-12 12:35:03,296 INFO waiting for contact_api to die
+2014-11-12 12:35:04,303 INFO stopped: contact_api (exit status 0)
+2014-11-12 12:35:05,247 CRIT Supervisor running as root (no user in config file)
+2014-11-12 12:35:05,260 INFO supervisord started with pid 1
+2014-11-12 12:35:06,268 INFO spawned: 'contact_api' with pid 9
+2014-11-12 12:35:07,559 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 12:55:16,577 WARN received SIGTERM indicating exit request
+2014-11-12 12:55:16,577 INFO waiting for contact_api to die
+2014-11-12 12:55:17,585 INFO stopped: contact_api (exit status 0)
+2014-11-12 12:55:18,560 CRIT Supervisor running as root (no user in config file)
+2014-11-12 12:55:18,573 INFO supervisord started with pid 1
+2014-11-12 12:55:19,578 INFO spawned: 'contact_api' with pid 10
+2014-11-12 12:55:20,844 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 12:58:08,147 WARN received SIGTERM indicating exit request
+2014-11-12 12:58:08,148 INFO waiting for contact_api to die
+2014-11-12 12:58:09,155 INFO stopped: contact_api (exit status 0)
+2014-11-12 13:02:45,685 CRIT Supervisor running as root (no user in config file)
+2014-11-12 13:02:45,702 INFO supervisord started with pid 1
+2014-11-12 13:02:46,709 INFO spawned: 'contact_api' with pid 9
+2014-11-12 13:02:47,976 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 13:14:52,536 WARN received SIGTERM indicating exit request
+2014-11-12 13:14:52,536 INFO waiting for contact_api to die
+2014-11-12 13:14:53,542 INFO stopped: contact_api (exit status 0)
+2014-11-12 13:14:54,537 CRIT Supervisor running as root (no user in config file)
+2014-11-12 13:14:54,549 INFO supervisord started with pid 1
+2014-11-12 13:14:55,554 INFO spawned: 'contact_api' with pid 10
+2014-11-12 13:14:56,809 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 13:15:12,849 WARN received SIGTERM indicating exit request
+2014-11-12 13:15:12,849 INFO waiting for contact_api to die
+2014-11-12 13:15:13,855 INFO stopped: contact_api (exit status 0)
+2014-11-12 13:15:23,757 CRIT Supervisor running as root (no user in config file)
+2014-11-12 13:15:23,769 INFO supervisord started with pid 1
+2014-11-12 13:15:24,773 INFO spawned: 'contact_api' with pid 9
+2014-11-12 13:15:26,097 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 13:28:20,663 WARN received SIGTERM indicating exit request
+2014-11-12 13:28:20,664 INFO waiting for contact_api to die
+2014-11-12 13:28:21,674 INFO stopped: contact_api (exit status 0)
+2014-11-12 13:29:21,369 CRIT Supervisor running as root (no user in config file)
+2014-11-12 13:29:21,384 INFO supervisord started with pid 1
+2014-11-12 13:29:22,389 INFO spawned: 'contact_api' with pid 9
+2014-11-12 13:29:23,651 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 13:30:16,874 WARN received SIGTERM indicating exit request
+2014-11-12 13:30:16,875 INFO waiting for contact_api to die
+2014-11-12 13:30:17,882 INFO stopped: contact_api (exit status 0)
+2014-11-12 13:30:18,887 CRIT Supervisor running as root (no user in config file)
+2014-11-12 13:30:18,900 INFO supervisord started with pid 1
+2014-11-12 13:30:19,905 INFO spawned: 'contact_api' with pid 9
+2014-11-12 13:30:21,165 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-12 14:33:07,975 WARN received SIGTERM indicating exit request
+2014-11-12 14:33:07,976 INFO waiting for contact_api to die
+2014-11-12 14:33:08,985 INFO stopped: contact_api (exit status 0)
+2014-11-12 14:33:22,162 CRIT Supervisor running as root (no user in config file)
+2014-11-12 14:33:22,187 INFO supervisord started with pid 1
+2014-11-12 14:33:23,192 INFO spawned: 'contact_api' with pid 10
+2014-11-12 14:33:24,465 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-13 05:47:33,711 WARN received SIGTERM indicating exit request
+2014-11-13 05:47:33,715 INFO waiting for contact_api to die
+2014-11-13 05:47:34,722 INFO stopped: contact_api (exit status 0)
+2014-11-12 21:48:25,737 CRIT Supervisor running as root (no user in config file)
+2014-11-12 21:48:25,801 INFO supervisord started with pid 1
+2014-11-12 21:48:26,805 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:48:27,808 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:48:29,814 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:48:32,824 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:48:32,824 INFO gave up: contact_api entered FATAL state, too many start retries too quickly
+2014-11-12 21:48:59,983 WARN received SIGTERM indicating exit request
+2014-11-12 21:49:11,174 CRIT Supervisor running as root (no user in config file)
+2014-11-12 21:49:11,189 INFO supervisord started with pid 1
+2014-11-12 21:49:12,193 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:49:13,196 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:49:15,203 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:49:18,208 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:49:18,209 INFO gave up: contact_api entered FATAL state, too many start retries too quickly
+2014-11-12 21:51:35,870 WARN received SIGTERM indicating exit request
+2014-11-12 21:52:15,384 CRIT Supervisor running as root (no user in config file)
+2014-11-12 21:52:15,441 INFO supervisord started with pid 1
+2014-11-12 21:52:16,444 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:52:17,447 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:52:19,459 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:52:22,470 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:52:22,470 INFO gave up: contact_api entered FATAL state, too many start retries too quickly
+2014-11-12 21:53:01,211 WARN received SIGTERM indicating exit request
+2014-11-12 21:53:52,812 CRIT Supervisor running as root (no user in config file)
+2014-11-12 21:53:52,829 INFO supervisord started with pid 1
+2014-11-12 21:53:53,831 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:53:54,833 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:53:56,838 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:53:59,845 INFO spawnerr: can't find command '/usr/local/python/bin/uwsgi'
+2014-11-12 21:53:59,846 INFO gave up: contact_api entered FATAL state, too many start retries too quickly
+2014-11-12 21:55:39,070 WARN received SIGTERM indicating exit request
+2014-11-17 10:35:58,736 CRIT Supervisor running as root (no user in config file)
+2014-11-17 10:35:58,821 INFO supervisord started with pid 1
+2014-11-17 10:35:59,824 INFO spawned: 'contact_api' with pid 9
+2014-11-17 10:36:01,368 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 10:37:30,691 WARN received SIGTERM indicating exit request
+2014-11-17 10:37:30,691 INFO waiting for contact_api to die
+2014-11-17 10:37:31,702 INFO stopped: contact_api (exit status 0)
+2014-11-17 10:39:25,518 CRIT Supervisor running as root (no user in config file)
+2014-11-17 10:39:25,584 INFO supervisord started with pid 1
+2014-11-17 10:39:26,589 INFO spawned: 'contact_api' with pid 9
+2014-11-17 10:39:27,934 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:25:29,952 WARN received SIGTERM indicating exit request
+2014-11-17 11:25:29,952 INFO waiting for contact_api to die
+2014-11-17 11:25:30,963 INFO stopped: contact_api (exit status 0)
+2014-11-17 11:25:31,968 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:25:32,021 INFO supervisord started with pid 1
+2014-11-17 11:25:33,030 INFO spawned: 'contact_api' with pid 9
+2014-11-17 11:25:34,325 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:29:24,298 WARN received SIGTERM indicating exit request
+2014-11-17 11:29:24,299 INFO waiting for contact_api to die
+2014-11-17 11:29:25,307 INFO stopped: contact_api (exit status 0)
+2014-11-17 11:29:26,364 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:29:26,427 INFO supervisord started with pid 1
+2014-11-17 11:29:27,431 INFO spawned: 'contact_api' with pid 9
+2014-11-17 11:29:28,732 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:30:49,130 WARN received SIGTERM indicating exit request
+2014-11-17 11:30:49,130 INFO waiting for contact_api to die
+2014-11-17 11:30:50,137 INFO stopped: contact_api (exit status 0)
+2014-11-17 11:30:51,094 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:30:51,115 INFO supervisord started with pid 1
+2014-11-17 11:30:52,121 INFO spawned: 'contact_api' with pid 9
+2014-11-17 11:30:53,411 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:32:02,699 WARN received SIGTERM indicating exit request
+2014-11-17 11:32:02,699 INFO waiting for contact_api to die
+2014-11-17 11:32:03,707 INFO stopped: contact_api (exit status 0)
+2014-11-17 11:32:04,657 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:32:04,719 INFO supervisord started with pid 1
+2014-11-17 11:32:05,728 INFO spawned: 'contact_api' with pid 9
+2014-11-17 11:32:07,019 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:39:52,731 WARN received SIGTERM indicating exit request
+2014-11-17 11:39:52,731 INFO waiting for contact_api to die
+2014-11-17 11:39:53,738 INFO stopped: contact_api (exit status 0)
+2014-11-17 11:39:54,513 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:39:54,579 INFO supervisord started with pid 1
+2014-11-17 11:39:55,583 INFO spawned: 'contact_api' with pid 10
+2014-11-17 11:39:56,921 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 11:45:34,448 WARN received SIGTERM indicating exit request
+2014-11-17 11:45:34,449 INFO waiting for contact_api to die
+2014-11-17 11:45:35,460 INFO stopped: contact_api (exit status 0)
+2014-11-17 11:45:48,903 CRIT Supervisor running as root (no user in config file)
+2014-11-17 11:45:48,977 INFO supervisord started with pid 1
+2014-11-17 11:45:49,984 INFO spawned: 'contact_api' with pid 9
+2014-11-17 11:45:51,390 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2014-11-17 12:10:13,340 WARN received SIGTERM indicating exit request
+2014-11-17 12:10:13,341 INFO waiting for contact_api to die
+2014-11-17 12:10:14,350 INFO stopped: contact_api (exit status 0)
+2014-11-17 12:10:34,413 CRIT Supervisor running as root (no user in config file)
+2014-11-17 12:10:34,471 INFO supervisord started with pid 1
+2014-11-17 12:10:35,478 INFO spawned: 'contact_api' with pid 10
+2014-11-17 12:10:36,871 INFO success: contact_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

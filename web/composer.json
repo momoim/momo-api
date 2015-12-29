@@ -1,0 +1,9 @@
+{
+  "require": {
+    "php": ">=5.3.10",
+    "ext-memcache": "*",
+    "ext-mysqli": "*",
+    "ext-mongo": "*",
+    "ext-redis": "*"
+  }
+}

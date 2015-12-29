@@ -1,0 +1,1382 @@
+*** Starting uWSGI 2.0.7 (64bit) on [Tue Nov 11 14:02:40 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: d41fa14ea392
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x10dde70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x10dde70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Tue Nov 11 14:07:35 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 9ff6ab1655b0
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0xbcde70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xbcde70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Tue Nov 11 16:10:04 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 9ff6ab1655b0
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x2521e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2521e70 pid: 10 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 13, cores: 1000)
+spawned uWSGI worker 2 (pid: 14, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Tue Nov 11 16:10:32 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 9ff6ab1655b0
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0xb78be0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xb78be0 pid: 10 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 13, cores: 1000)
+spawned uWSGI worker 2 (pid: 14, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Tue Nov 11 20:19:38 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 9ff6ab1655b0
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1a24be0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1a24be0 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 10:37:32 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 9ff6ab1655b0
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x211dbe0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x211dbe0 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+auth.py:104 -  INFO - zone:86 number:13800000000
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 10:41:20 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 9ff6ab1655b0
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x98ebe0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x98ebe0 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 10:49:15 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: e7877c79d76f
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1d90e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1d90e70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 11:15:48 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: e7877c79d76f
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1afae70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1afae70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 11:16:08 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: e7877c79d76f
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x204be70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x204be70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 11:18:41 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: e7877c79d76f
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1acbe70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1acbe70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 11:19:37 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: bd483be29980
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x13d6e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x13d6e70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 11:20:50 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: bd483be29980
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x24d4e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x24d4e70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 11:21:30 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: bd483be29980
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x28cbe70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x28cbe70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 11:21:44 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: bd483be29980
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1960e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1960e70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 11:29:17 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 49d74e43d9bc
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x162be70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x162be70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 11:30:10 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 00f59d18bbf3
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1342e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1342e70 pid: 10 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 13, cores: 1000)
+spawned uWSGI worker 2 (pid: 14, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 11:32:42 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 18c49fab639f
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x984e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x984e70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+auth.py:104 -  INFO - zone:86 number:13800000000
+[pid: 12|app: 0|req: 1/1] 172.17.0.81 () {40 vars in 838 bytes} [Wed Nov 12 11:32:53 2014] GET /verify_code?zone=86&number=13800000000 => generated 57 bytes in 5 msecs (HTTP/1.0 200) 2 headers in 71 bytes (3 switches on core 999)
+auth.py:104 -  INFO - zone:86 number:13800000000
+[pid: 12|app: 0|req: 2/2] 172.17.0.81 () {40 vars in 838 bytes} [Wed Nov 12 11:32:54 2014] GET /verify_code?zone=86&number=13800000000 => generated 57 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 71 bytes (3 switches on core 999)
+token.py:22 -  DEBUG - save key:access_token_7CYwS90URcP7zjW3ReK6bMALemXl3D
+token.py:22 -  DEBUG - save key:refresh_token_F9K6CfhWrMdM8UD62ztKdoIvqE60n6
+[pid: 12|app: 0|req: 3/3] 172.17.0.81 () {44 vars in 865 bytes} [Wed Nov 12 11:32:56 2014] POST /auth/token => generated 168 bytes in 3 msecs (HTTP/1.0 200) 2 headers in 72 bytes (3 switches on core 999)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 12:34:11 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 18c49fab639f
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x27c8e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x27c8e70 pid: 10 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 13, cores: 1000)
+spawned uWSGI worker 2 (pid: 14, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 12:35:06 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 18c49fab639f
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1b1ae70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1b1ae70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 12:55:19 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 18c49fab639f
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1f4be70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1f4be70 pid: 10 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 13, cores: 1000)
+spawned uWSGI worker 2 (pid: 14, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 13:02:46 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: f7fdf51bdc7c
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1883e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1883e70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 13:14:55 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: f7fdf51bdc7c
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0xa7ae70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xa7ae70 pid: 10 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 13, cores: 1000)
+spawned uWSGI worker 2 (pid: 14, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 13:15:24 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 72c1a2bfd02a
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1cbbe70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1cbbe70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 13:29:22 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 72c1a2bfd02a
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x8ece70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x8ece70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 13:30:19 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 72c1a2bfd02a
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1788e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1788e70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Wed Nov 12 14:33:23 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 66c44deb02a7
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1468e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1468e70 pid: 10 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 13, cores: 1000)
+spawned uWSGI worker 2 (pid: 14, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Mon Nov 17 10:35:59 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: b04993599c13
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x247ae70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x247ae70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Mon Nov 17 10:39:26 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 5a6e2fa262e8
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x2116e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2116e70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Mon Nov 17 11:25:33 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 5a6e2fa262e8
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x25e1e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x25e1e70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Mon Nov 17 11:29:27 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 5a6e2fa262e8
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x19a3e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x19a3e70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Mon Nov 17 11:30:52 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 5a6e2fa262e8
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x1d4ee70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1d4ee70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Mon Nov 17 11:32:05 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 5a6e2fa262e8
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x2445e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2445e70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Mon Nov 17 11:39:55 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 5a6e2fa262e8
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0xfade70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xfade70 pid: 10 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 13, cores: 1000)
+spawned uWSGI worker 2 (pid: 14, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+auth.py:87 -  INFO - zone:86 number:13800000000
+[pid: 14|app: 0|req: 1/1] 172.17.0.33 () {40 vars in 838 bytes} [Mon Nov 17 11:44:40 2014] GET /verify_code?zone=86&number=13800000000 => generated 57 bytes in 3 msecs (HTTP/1.0 200) 2 headers in 71 bytes (3 switches on core 999)
+token.py:22 -  DEBUG - save key:access_token_1BiywqSWrgXEg7OeqyuCOuq6ZUDB4y
+token.py:22 -  DEBUG - save key:refresh_token_Gib5z2nJopYmlqfTx3KZs7gVbbczos
+[pid: 14|app: 0|req: 2/2] 172.17.0.33 () {44 vars in 865 bytes} [Mon Nov 17 11:44:47 2014] POST /auth/token => generated 168 bytes in 3 msecs (HTTP/1.0 200) 2 headers in 72 bytes (3 switches on core 999)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Mon Nov 17 11:45:49 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 6da9a9d653c1
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0x133fe70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x133fe70 pid: 9 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 12, cores: 1000)
+spawned uWSGI worker 2 (pid: 13, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
+auth.py:87 -  INFO - zone:86 number:13800000000
+[pid: 12|app: 0|req: 1/1] 172.17.0.38 () {40 vars in 838 bytes} [Mon Nov 17 11:45:58 2014] GET /verify_code?zone=86&number=13800000000 => generated 57 bytes in 3 msecs (HTTP/1.0 200) 2 headers in 71 bytes (3 switches on core 999)
+token.py:22 -  DEBUG - save key:access_token_DB3tM7OBhmAjxhnRn505rDV8scEDkv
+token.py:22 -  DEBUG - save key:refresh_token_UY61Lk6J6SmOFQwuPMogyzqBhs6Ajv
+[pid: 12|app: 0|req: 2/2] 172.17.0.38 () {44 vars in 865 bytes} [Mon Nov 17 11:46:05 2014] POST /auth/token => generated 168 bytes in 4 msecs (HTTP/1.0 200) 2 headers in 72 bytes (3 switches on core 999)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.7 (64bit) on [Mon Nov 17 12:10:35 2014] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-4) on 08 October 2014 09:13:33
+os: Linux-3.16.4-tinycore64 #1 SMP Thu Oct 23 16:14:24 UTC 2014
+nodename: 80f1b0f6fd29
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /contact_api
+detected binary path: /usr/local/python/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 1048576
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 1000 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :15109 fd 3
+Python version: 2.7.8 (default, Oct  8 2014, 08:51:15)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+Set PythonHome to /usr/local/python
+Python main interpreter initialized at 0xa44e70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 117115392 bytes (114370 KB) for 2000 cores
+*** Operational MODE: preforking+async ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xa44e70 pid: 10 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 13, cores: 1000)
+spawned uWSGI worker 2 (pid: 14, cores: 1000)
+*** running gevent loop engine [addr:0x4975f0] ***
