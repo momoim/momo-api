@@ -141,7 +141,7 @@ define('MONGO_DB_CALLSHOW', 'callshow');
 if(IN_PRODUCTION === TRUE) {
     $config['log_directory'] = '/data/weblogs/v3.api.momo.im/weblogs/';
     $config['ttserver'] = array('10.1.242.51', '10.1.242.209');
-     
+
     define('API_PATH', 'http://v3.api.momo.im/');
     define('TRACKER_SERVER', '10.1.242.51');
     //定义段地址
@@ -156,9 +156,9 @@ if(IN_PRODUCTION === TRUE) {
     define('MO_EVENT', 'http://event.momo.im/');
     define('CACHE_PRE', 'momoim_');
 } else {
-    $config['log_directory'] = APPPATH.'logs';
+    $config['log_directory'] = '/logs';
     $config['ttserver'] = array('192.168.94.20');
-   
+
     define('TRACKER_SERVER', '192.168.9.128');
     //内网
     define('API_PATH', 'http://new.api.uap26.91.com/');
@@ -168,6 +168,6 @@ if(IN_PRODUCTION === TRUE) {
     define('WAP', 'http://3g.uap26.91.com');
     //mo短信跳转地址
     define('MO_SMS_JUMP', 'http://uap26.91.com/');
-    
+
     define('CACHE_PRE', 'momo26_');
 }

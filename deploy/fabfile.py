@@ -91,7 +91,6 @@ start_container = '''
 
 reload_container = '''
             docker-compose -f $branch.yml up -d
-            docker-compose -f $branch.yml kill -s HUP
 '''
 
 pull_template = '''#!/bin/sh
@@ -549,4 +548,3 @@ def rollback(project=None):
                             with cd(app_dir):
                                 sudo("git checkout HEAD~1 -f")
                                 sudo('docker-compose -f {env}.yml up -d'.format(env=role))
-                                sudo('docker-compose -f {env}.yml kill -s HUP'.format(env=role))
