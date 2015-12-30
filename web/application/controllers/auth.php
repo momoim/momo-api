@@ -61,8 +61,14 @@ class Auth_Controller extends Controller
 
     public function verify_code()
     {
-        $zone_code = $this->input->get('zone_code', '');
-        $mobile = $this->input->get('mobile', '');
+        if ($this->get_method() != 'POST') {
+            $this->send_response(405, NULL, '请求的方法不存在');
+        }
+
+        $data = $this->get_data();
+        $zone_code = isset($data['zone_code']) ? $data['zone_code'] : '';
+        $mobile = isset($data['mobile']) ? $data['mobile'] : '';
+
         if (!international::check_is_valid($zone_code, $mobile)) {
             $this->send_response(400, NULL, Kohana::lang('authorization.mobile_invalid'));
         }
@@ -99,6 +105,10 @@ class Auth_Controller extends Controller
 
     public function token()
     {
+        if ($this->get_method() != 'POST') {
+            $this->send_response(405, NULL, '请求的方法不存在');
+        }
+
         $data = $this->get_data();
         $zone_code = isset($data['zone_code']) ? $data['zone_code'] : '';
         $mobile = isset($data['mobile']) ? $data['mobile'] : '';
@@ -132,6 +142,10 @@ class Auth_Controller extends Controller
 
     public function refresh_token()
     {
+        if ($this->get_method() != 'POST') {
+            $this->send_response(405, NULL, '请求的方法不存在');
+        }
+
         $data = $this->get_data();
 
         if (empty($data['refresh_token'])) {
