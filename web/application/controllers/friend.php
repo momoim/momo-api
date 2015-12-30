@@ -96,6 +96,10 @@ class Friend_Controller extends Controller
                 $this->send_response(400, NULL, "你们已经是好友");
             }
 
+            if (!User_Model::instance()->get_user_by_id($uid)) {
+                $this->send_response(400, NULL, "用户不存在");
+            }
+
             $status = $this->model->add_friend($this->user_id, $uid);
             $this->send_response(200, array("status" => $status));
         }
