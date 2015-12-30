@@ -36,6 +36,7 @@ fpm:
     - memcached
   volumes:
     - ./web:/var/www/html
+    - ./data/logs:/logs
 
 nginx:
   restart: always
