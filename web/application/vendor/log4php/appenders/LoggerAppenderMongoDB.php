@@ -116,7 +116,7 @@ class LoggerAppenderMongoDB extends LoggerAppender {
 	 */
 	public function activateOptions() {
 		try {
-			$this->connection = new Mongo(sprintf('%s:%d', $this->host, $this->port));
+			$this->connection = new MongoClient(sprintf('%s:%d', $this->host, $this->port));
 			$db	= $this->connection->selectDB($this->databaseName);
 			if ($this->userName !== null && $this->password !== null) {
 				$authResult = $db->authenticate($this->userName, $this->password);

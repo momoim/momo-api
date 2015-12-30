@@ -169,7 +169,7 @@ class User_Model extends Model implements FS_Gateway_Core
         );
     }
 
-    public function create_token($expires_in, $refresh_token = false)
+    public function create_token($expires_in, $refresh_token = false, $user = NULL)
     {
         $token = array(
             'access_token' => $this->random_token_generator(),
@@ -179,6 +179,13 @@ class User_Model extends Model implements FS_Gateway_Core
         if ($refresh_token) {
             $token['refresh_token'] = $this->random_token_generator();
         }
+
+        if ($user) {
+            $token = array_merge($token, $user);
+        }
+
+        $this->save_token($token);
+
         return $token;
     }
 

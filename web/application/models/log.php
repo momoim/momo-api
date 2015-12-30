@@ -8,7 +8,7 @@ class Log_Model extends Model {
 	public function __construct() {
 		// 加载数据库类。以下可以使用 $this->db 操作数据库（如果不要求可以省略）
 		parent::__construct ();
-		$mg_instance = new Mongo ( Kohana::config ( 'uap.mongodb' ) );
+		$mg_instance = new MongoClient( Kohana::config ( 'uap.mongodb' ) );
 		$this->m = $mg_instance->selectDB ( MONGO_DB_FEED );
 		//$feed->drop();
 		$this->mongoLog = $this->m->selectCollection ( 'log' );

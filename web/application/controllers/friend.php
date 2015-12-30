@@ -84,12 +84,18 @@ class Friend_Controller extends Controller
 
     public function add()
     {
-        if ($this->get_method() != 'GET') {
+        if ($this->get_method() != 'POST') {
             $this->send_response(405, NULL, '请求的方法不存在');
         }
 
-        $uid = $this->uri->segment(3);
+        $data = $this->get_data();
+        $uid = isset($data['user_id']) ? $data['user_id'] : 0;
+
         if ($uid = ( int )$uid) {
+            if ($this->model->check_isfriend($this->user_id, $uid)) {
+                $this->send_response(400, NULL, "你们已经是好友");
+            }
+
             $status = $this->model->add_friend($this->user_id, $uid);
             $this->send_response(200, array("status" => $status));
         }

@@ -9,7 +9,7 @@ class Comment_Model extends Model
         public function __construct()
         {
             parent::__construct();
-            $mg_instance = new Mongo(Kohana::config('uap.mongodb'));
+            $mg_instance = new MongoClient(Kohana::config('uap.mongodb'));
             $this->m = $mg_instance->selectDB(MONGO_DB_FEED);
             $this->comment = $this->m->selectCollection('comment_new');
             $this->comment_new = $this->m->selectCollection('comment_new');
@@ -44,7 +44,7 @@ class Comment_Model extends Model
     private function bulid_user_hyperlinks(&$matches) {
     	$user = sns::getuser($matches[2]);
     	$realname = $user['realname'];
-    
+
         if ($matches[1]==$realname) {
         	if($user['status']<2) {
             	$this->at2mo[] = array('id' => $matches[2], 'name' => $matches[1]);
@@ -55,7 +55,7 @@ class Comment_Model extends Model
         }else{
         	$this->at2id[] = array('id' => $matches[2], 'name' => $matches[1],'group_id'=>$this->group_id);
         }
-        
+
         return ' [@'.(count($this->at2id)-1).']';
     }
 
@@ -80,7 +80,7 @@ class Comment_Model extends Model
             $uid = $uid==0?$this->uid:$uid;
 
             $content_link = $addfeed->atLink($content, $this->at2id);
-            $m = new Mongo(Kohana::config('uap.mongodb'));
+            $m = new MongoClient(Kohana::config('uap.mongodb'));
 
             $comment_id = md5($status_id.'_'.$feed_uid.'_'.microtime());
 			$addTime = microtime(true)*10000;
@@ -116,7 +116,7 @@ class Comment_Model extends Model
                     }
                     $this->mq_send ( json_encode ( $immsg ), substr ( $uid_string, 0, - 1 ) );
             }
-            
+
             //右侧聊天窗口end
             $client_id = $client_id ? $client_id : 0;
             $realname = sns::getrealname($uid);
@@ -143,7 +143,7 @@ class Comment_Model extends Model
             if($reply_commentid) {
                 $reply_comment = $this->comment->findOne(array('id'=>$reply_commentid));
             	$is_reply = false;
-                
+
                 if($reply_comment['uid'] && count($this->at2id) > 0) {
                     foreach($this->at2id as $key => $var) {
                         if($var['id'] == $reply_comment['uid']) {
@@ -190,7 +190,7 @@ class Comment_Model extends Model
             $addfeed->addFeedComment($status_id,$comment_list,$isbubble);
             $addfeed->updateFeed ( $status_id );
             $addfeed->delHidden ( $status_id );
-            
+
             $addfeed->mo_sms('comment',$status_id,$comment_id,$this->at2mo);
 
             $return = array("success"=>true,"data"=>array("id"=>$comment_id,"text"=>$content_link));
@@ -198,7 +198,7 @@ class Comment_Model extends Model
 
             return $return;
         }
-					
+
 		/**
 		 * 删除评论
 		 * @param integer $appid 	评论唯一性id
@@ -208,8 +208,8 @@ class Comment_Model extends Model
 		{
 			return $this->db->deleteData('comment',"appid='$appid' and appdescribe='$describe'");
 		}
-				
-			
+
+
 		/**
 		 * 正规的content
 		 * @param unknown_type $content
@@ -219,12 +219,12 @@ class Comment_Model extends Model
 			if (strlen($content)>0)
 			{
 				$trans = array("\r\n" => "", "\n" => "","\r"=>"","["=>"\[","]"=>"\]","{"=>"\{","}"=>"\}",'"'=>'\"',"\\"=>'');
-				return strtr($content, $trans);		
+				return strtr($content, $trans);
 			}
 			else
 				return '';
-		}		
-		
+		}
+
 		/**
 		 * 决定是否显示评论框
 		 * @param int $vuid 登录者id
@@ -233,7 +233,7 @@ class Comment_Model extends Model
 		public function retrunAllow($vuid, $uid)
 		{
 			if ($vuid==$uid) return 1;
-			
+
 		    $right	= User_Model::instance()->getRights($uid,'allowcomment');
 			if ($right==0) {    //任何人可以访问
 				return 1;
@@ -243,12 +243,12 @@ class Comment_Model extends Model
 					return 1;
 				} else {    //如果不是好友返回2
 					return 2;
-				}	
+				}
 			} else {
 				return 0;
 			}
-		}			
-		
+		}
+
 		/**
 		 * 取得某条留言内容
 		 * @param integer $pid
@@ -256,18 +256,18 @@ class Comment_Model extends Model
 		public function getOnlyTitle($pid)
 		{
 			return $this->db->getOne('comment','content',"id='$pid'");
-		}	
+		}
 
 		public function getCommentById($id)
 		{
 			//return $this->db->getRow('comment','content, uid',"id='$id'");
 			return $this->comment->findOne(array('id' => $id));
 		}
-				
+
 		/**
 		 * 取得某条留言标题
 		 * @param integer $appid 留言唯一标识
-		 * 
+		 *
 		 */
 		public function getOnlySubject($sign=1,$appid)
 		{
@@ -296,7 +296,7 @@ class Comment_Model extends Model
 					$album		= new Group_Model;
 					$array		= $album->getAlbumInfoByAid($appid);
 					$subject	= $array['data']['album_name'];
-					break;					
+					break;
 				case 7:
 					$photo		= new Group_Model;
 					$array		= $photo->getPhotoInfoByPid($appid);
@@ -312,9 +312,9 @@ class Comment_Model extends Model
 					break;
 			}
 			return $subject;
-			
+
 		}
-		
+
 		/**
 		 * 该方法已失效。
 		 * @param unknown_type $id
@@ -333,7 +333,7 @@ class Comment_Model extends Model
 			 }
 			 return $return;
 		}
-		
+
 		/**
 		 * 删除评论
 		 * @param integer $id //评论id
@@ -360,7 +360,7 @@ class Comment_Model extends Model
 			else
 				return '';
 		}
-						
+
 		/**
 		 * 取得子评论
 		 * @param integer $pid 父评论id
@@ -369,7 +369,7 @@ class Comment_Model extends Model
 		 * @param integer $appid 唯一标识
 		 * @param string $appdescribe 评论描述
 		 * @param string $type 评论类别
-		 * 
+		 *
 		 */
 		public function getChildComment($pid,$perPage,$offset=0,$uid='',$appid='',$appdescribe='',$type='')//取得子评论
 		{
@@ -387,7 +387,7 @@ class Comment_Model extends Model
 				return $this->db->fetchData('comment','',$wh,array('id'=>'desc'),$perPage,$offset);
 			}
 		}
-		
+
 		/**
 		 * 取得评论
 		 * @param integer $objid 帖子id
@@ -397,10 +397,10 @@ class Comment_Model extends Model
 		 * @param integer $order 排序类型
 		 */
 		public function fetchComment($objid=0,$typeid,$limit,$start,$order='DESC')//取回评论
-		{			
+		{
 			$col = $this->comment->find(array('objid'=>$objid,'typeid'=>intval($typeid)))->sort(array('addtime'=>-1))->skip(intval($start))->limit(intval($limit));
 			$arr = iterator_to_array($col);
-			
+
 			return $arr;
 		}
 
@@ -408,16 +408,16 @@ class Comment_Model extends Model
                     $val = $this->comment->findOne(array('id' => $comment_id));
                     return $val;
                 }
-		
+
 		public function fetchImComment($objid,$typeid,$limit,$id)//取回评论
-		{	//echo $appid.'_'.$appdescibe;		
+		{	//echo $appid.'_'.$appdescibe;
 			$arr = $id ? array('objid'=>$objid, 'typeid'=>intval($typeid), 'id' => array('$lt' => intval($id))) : array('objid'=>$objid, 'typeid'=>intval($typeid));
 			$col = $this->comment->find($arr)->sort(array('addtime'=>-1))->limit(intval($limit));
 			$arr = iterator_to_array($col);
-			
+
 			return $arr;
 		}
-		
+
 		/**
 		 * 取得回复
 		 * @param integer $pid 父评论id
@@ -430,24 +430,24 @@ class Comment_Model extends Model
 			else
 				return '';
 		}
-		
-		
+
+
 		/**
 		 * 某帖的评论总数
 		 * @param integer $appid 帖子id
 		 * @param string $appdescribe评论类型
 		 * @param integer $pid 父评论id
 		 */
-		
+
 		public function getCommentCount($appid,$appdescribe,$pid='')//取得某帖的评论总数
-		{	
+		{
 			$coll = $this->m->selectCollection('comment');
 			$arr = array('appid' => $appid, 'appdescribe' => $appdescribe);
 			$cur = $coll->find($arr);
-			
+
 			return $cur->count();
 		}
-		
+
 		/**
 		 * 取得某帖的评论总数
 		 * @param unknown_type $appid
@@ -457,7 +457,7 @@ class Comment_Model extends Model
 		{
 			return $this->db->getCount('comment',"appid='$appid' and appdescribe='$appdescribe'");
 		}
-		
+
 		/**
 		 * 保存到评论临时表
 		 * @param integer $appid //唯一标识符
@@ -473,7 +473,7 @@ class Comment_Model extends Model
 			$addtime	= time();
 			if ($id>0) {
 				$this->db->updateData('comment_last',array('addtime'=>$addtime),"id='$id'");
-				
+
 			} else {
 				$array		= array(
 					'appid'		=> $appid,
@@ -486,11 +486,11 @@ class Comment_Model extends Model
 			}
 			*/
 		}
-		
+
 		/**
 		 * 得到全部评论总数
 		 * @param integer $uid 用户id
-		 * @param string $type 评论的类型	
+		 * @param string $type 评论的类型
 		 */
 		public function getOtherCommentCount($uid,$type)
 		{
@@ -506,17 +506,17 @@ class Comment_Model extends Model
 			elseif ($type=='other')
 			{
 				$rs		= $this->db->query("select id from comment where owner='$uid' and uid!='$uid' $wh group by appid,appdescribe");
-			}	
+			}
 			return $rs->count();
 		}
-		
+
 		/**
 		 * 得到全部评论
 		 * @param integer $uid 用户id
 		 * @param string $type 留言的类型
 		 * @param integer $perPage 每页条数
 		 * @param integer $offset 偏移量
-		 */		
+		 */
 		public function getOtherComment($uid,$type,$perPage,$offset=0) //得到全部评论
 		{
 			$wh		= " and appdescribe!='index_leave'";
@@ -528,18 +528,18 @@ class Comment_Model extends Model
 			{
 				return $this->db->query("select * from comment where uid='$uid' and owner!='$uid' $wh group by appid,appdescribe order by addtime desc limit $offset,$perPage");
 			}
-			elseif ($type=='other') 
+			elseif ($type=='other')
 			{
 				return $this->db->query("select * from comment where owner='$uid' and uid!='$uid' $wh group by appid,appdescribe order by addtime desc limit $offset,$perPage");
-			}	
+			}
 		}
-		
+
 		/**
 		 * 得到全部留言总数
 		 * @param integer $uid 用户id
 		 * @param string $type 留言的类型
 		 * @param string $filter 评论类型
-		 */		
+		 */
 		public function getUserCommentCount($uid,$type,$filter='')
 		{
 			$wh		= " and appdescribe='index_leave'";
@@ -572,15 +572,15 @@ class Comment_Model extends Model
 				return $this->db->getCount('usermessage',"owner='$uid' and uid!='$uid' ");
 			}
 		}
-				
+
 		/**
 		 * 更新父评论时间
 		 */
 		public function updateParent($id,$time)
 		{
 			$this->db->updatedata('comment',array('updatetime'=>$time),array('id'=>$id));
-		}	
-			
+		}
+
 		/**
 		 * 取得全部留言
 		 * @param integer $uid 用户id
@@ -603,9 +603,9 @@ class Comment_Model extends Model
 			elseif ($type=='other')
 			{
 				return $this->db->query("select * from usermessage where owner='$uid' and uid!='$uid' order by addtime desc limit $offset,$perPage");
-			}			
+			}
 		}
-		
+
 		/**
 		 * 取得我的回复及评论
 		 * @param integer $uid 用户id
@@ -617,10 +617,10 @@ class Comment_Model extends Model
 		public function getMyComment($uid,$appid,$appdescribe,$start,$end)//我的回复及评论
 		{
 			$start		= $start ? $start :0;
-			$end		= $end ?$end :100;			
+			$end		= $end ?$end :100;
 			return $this->db->fetchData('comment','',array('uid'=>$uid,'appdescribe'=>$appdescribe,'pid'=>0),array('id'=>'asc'),$start,$end);
 		}
-		
+
 		/**
 		 * 别人对我的回复和评论
 		 * @param integer $uid
@@ -634,8 +634,8 @@ class Comment_Model extends Model
 			$start		= $start ? $start :0;
 			$end		= $end ?$end :100;
 			return $this->db->fetchData('comment','',array('owner'=>$uid,'appdescribe'=>$appdescibe,'pid'=>0),array('id'=>'asc'),$start,$end);
-		}		
-		
+		}
+
 		/**
 		 * 获取评论js
 		 * @param string $title 评论的题头，目前有留言和评论两个，默认为评论
@@ -659,13 +659,13 @@ class Comment_Model extends Model
 			elseif ($allow ==2)
 			{
 				$showInput		= 'false';
-				$showInputMsg	= '仅好友可以评论';				
+				$showInputMsg	= '仅好友可以评论';
 			}
-		
-			$praise  = new Praise_Model;		
+
+			$praise  = new Praise_Model;
 
 		    $str .='
-		    	<script src="'.url::js_url().'lib/ui.pagination/jquery.pagination.js" type="text/javascript"></script>			
+		    	<script src="'.url::js_url().'lib/ui.pagination/jquery.pagination.js" type="text/javascript"></script>
 				<div>
 					<span class="span-comment-opt"></span>
 				</div>
@@ -698,14 +698,14 @@ class Comment_Model extends Model
                             showInput:'.$showInput.',
                             showInputMsg:"'.$showInputMsg.'",
                             typeid: "'.$feedModel->getFeedTplId($appdescribe).'",    //diary,index,vote等
-                            objid: '.$appid.',               //当前应用id 如日志id,投票id,首页留言appid=uid			
+                            objid: '.$appid.',               //当前应用id 如日志id,投票id,首页留言appid=uid
                             inputPosition: "top",
                             inputExpand: true,
                             showPager: true
                     });
 		        });
-		    </script>';		
-		    return $str;	
-		}		
+		    </script>';
+		    return $str;
+		}
 
 	}

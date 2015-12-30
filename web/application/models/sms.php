@@ -36,7 +36,7 @@ class Sms_Model extends Model
 	}
 	
 	public function __construct() {
-		$mg_instance = new Mongo(Kohana::config('uap.mongodb'));
+		$mg_instance = new MongoClient(Kohana::config('uap.mongodb'));
         $this->mongo = $mg_instance->selectDB(MONGO_DB_FEED);
         $this->mongo_sms = $this->mongo->selectCollection ('sms');
 	}

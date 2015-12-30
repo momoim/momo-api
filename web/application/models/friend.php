@@ -89,11 +89,12 @@ class Friend_Model extends Model
      */
     public function get_link($user_id, $friend_user_id)
     {
-        $xm_uid = Kohana::config('uap.xiaomo');
-        if ($user_id == $xm_uid or $friend_user_id == $xm_uid) {
-            return TRUE;
-        }
-        if ($friend_user_id and Contact_Model::instance()->is_contact($user_id, $friend_user_id)) {
+        $result = $this->db->getwhere('friends', array(
+            'uid' => $user_id,
+            'fid' => $friend_user_id,
+        ));
+
+        if ($result->count()) {
             return TRUE;
         }
         return FALSE;

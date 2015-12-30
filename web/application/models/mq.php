@@ -10,7 +10,7 @@ class Mq_Model extends Model {
 	
 	public function __construct() {
 		parent::__construct ();
-		$mg_instance = new Mongo ( Kohana::config ( 'uap.mongodb' ) );
+		$mg_instance = new MongoClient ( Kohana::config ( 'uap.mongodb' ) );
 		$this->m = $mg_instance->selectDB ( MONGO_DB_FEED );
 		$this->mq = $this->m->selectCollection ( 'mq' );
 	

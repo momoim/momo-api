@@ -21,7 +21,7 @@ class App_Message_Model extends Model {
     
     public function __construct($appid=0){
         parent::__construct();
-        $mg_instance = new Mongo(Kohana::config('uap.mongodb'));
+        $mg_instance = new MongoClient(Kohana::config('uap.mongodb'));
         $this->mongo_msg = $mg_instance->selectDB('app_message')->selectCollection ('im_message');
         $this->appid = $appid;
         if (in_array((int)$this->appid, $this->standalone_apps)){

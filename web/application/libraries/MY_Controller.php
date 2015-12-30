@@ -57,7 +57,7 @@ class Controller extends Controller_Core
     protected $http_code;
     protected $http_info;
 
-    protected $no_auth = array('welcome', 'user/login', 'auth/verify_code', 'auth/token');
+    protected $no_auth = array('welcome', 'user/login', 'auth/verify_code', 'auth/token', 'auth/refresh_token');
 
     /**
      * Contains the last API call.
@@ -148,7 +148,6 @@ class Controller extends Controller_Core
      */
     public function get_data($standardize = true)
     {
-        $data = array();
         $input_data = file_get_contents('php://input');
         $data = json_decode($input_data, TRUE);
         if ((function_exists('json_last_error') and

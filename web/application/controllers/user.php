@@ -60,7 +60,11 @@ class User_Controller extends Controller implements FS_Gateway_Core, User_Interf
             $this->send_response(400, NULL, Kohana::lang('user.username_password_not_match'));
         }
 
-        $token = $this->model->create_token(3600, TRUE);
+        $token = $this->model->create_token(3600, TRUE, array(
+            'zone_code' => $user['zone_code'],
+            'mobile' => $user['mobile'],
+            'id' => (int)$user['id']
+        ));
 
         $this->send_response(200, array(
                 'uid' => $user ['uid'],
@@ -102,7 +106,7 @@ class User_Controller extends Controller implements FS_Gateway_Core, User_Interf
             if ($res) {
                 $user = $this->model->get_user_by_mobile($res['country_code'], $res['mobile']);
                 if ($user) {
-                    $result[$mobile] = array(
+                    $result[] = array(
                         'id' => $user['id'],
                         'name' => $user['username'],
                         'avatar' => sns::getavatar($user['id'])

@@ -25,7 +25,7 @@ class Life_Model extends Model {
         parent::__construct();
         
         if (self::ENABLE_MG) {
-            $this->mg = new Mongo(Kohana::config('uap.mongodb'));
+            $this->mg = new MongoClient(Kohana::config('uap.mongodb'));
             $this->mongo = $this->mg->selectDB(MONGO_DB_LIFE);
         }
     }

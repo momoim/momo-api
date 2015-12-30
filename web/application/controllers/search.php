@@ -166,7 +166,7 @@ class Search_Controller extends Controller
      * mongo instance
      */
     private function mongo_instance() {
-        $mongo_instance = new Mongo ( Kohana::config ( 'uap.mongodb' ) );
+        $mongo_instance = new MongoClient ( Kohana::config ( 'uap.mongodb' ) );
         return $mongo_instance->selectDB ( MONGO_DB_FEED )->selectCollection ( 'feed_new' );
     }
 

@@ -8,7 +8,7 @@ class Im_Model extends Model {
 
     public function __construct(){
         parent::__construct();
-        $mg_instance = new Mongo(Kohana::config('uap.mongodb'));
+        $mg_instance = new MongoClient(Kohana::config('uap.mongodb'));
         $this->mongo = $mg_instance->selectDB(MONGO_DB_FEED);
         $this->mongo_msg = $this->mongo->selectCollection ('im_message');
     }

@@ -121,12 +121,11 @@ class Auth_Controller extends Controller
             $id = $this->model->create_user($zone_code, $mobile, '', $regip);
         }
 
-        $token = $this->model->create_token(3600, TRUE);
-        $token['zone_code'] = $zone_code;
-        $token['mobile'] = $mobile;
-        $token['id'] = (int)$id;
-
-        $this->model->save_token($token);
+        $token = $this->model->create_token(3600, TRUE, array(
+            'zone_code' => $zone_code,
+            'mobile' => $mobile,
+            'id' => (int)$id
+        ));
 
         $this->send_response(200, $token);
     }
@@ -144,13 +143,7 @@ class Auth_Controller extends Controller
             $this->send_response(400, NULL, Kohana::lang('authorization.input_invalid'));
         }
 
-        $token = $this->model->create_token(3600, FALSE);
-        $token['zone_code'] = $refresh_token['zone_code'];
-        $token['mobile'] = $refresh_token['mobile'];
-        $token['id'] = $refresh_token['id'];
-
-        $token['refresh_token'] = $refresh_token['refresh_token'];
-        $this->model->save_token($token);
+        $token = $this->model->create_token(3600, FALSE, $refresh_token);
         $this->send_response(200, $token);
     }
 
