@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
+*.pyc
 
 ### CodeIgniter template
 */logs/*.php
