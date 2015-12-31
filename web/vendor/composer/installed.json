@@ -1,0 +1,58 @@
+[
+    {
+        "name": "raven/raven",
+        "version": "0.13.0",
+        "version_normalized": "0.13.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/getsentry/raven-php.git",
+            "reference": "1d5be07afc001df98a3528d1f928eeb2241afce6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packagist.phpcomposer.com/files/getsentry/raven-php/1d5be07afc001df98a3528d1f928eeb2241afce6.zip",
+            "reference": "1d5be07afc001df98a3528d1f928eeb2241afce6",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.2.4"
+        },
+        "require-dev": {
+            "fabpot/php-cs-fixer": "^1.8.0",
+            "phpunit/phpunit": "^4.6.6"
+        },
+        "time": "2015-09-09 18:12:58",
+        "bin": [
+            "bin/raven"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.13.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Raven_": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD"
+        ],
+        "authors": [
+            {
+                "name": "David Cramer",
+                "email": "dcramer@gmail.com"
+            }
+        ],
+        "description": "A PHP client for Sentry (http://getsentry.com)",
+        "homepage": "http://getsentry.com",
+        "keywords": [
+            "log",
+            "logging"
+        ]
+    }
+]

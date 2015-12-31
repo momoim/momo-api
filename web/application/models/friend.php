@@ -169,7 +169,7 @@ class Friend_Model extends Model
         $fids = array();
         if ($result) {
             foreach ($result as $res) {
-                $fids[] = (int)$res['fid'];
+                $fids[] = $res['fid'];
             }
         }
         return $fids;

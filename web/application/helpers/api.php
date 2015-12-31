@@ -142,7 +142,7 @@ class api {
         if (function_exists ( 'fastcgi_finish_request' )) {
         	fastcgi_finish_request ();
         }
-        self::save_log($response_code, $error_msg);
+//        self::save_log($response_code, $error_msg);
         if ($exit) {
 	        exit();
         }

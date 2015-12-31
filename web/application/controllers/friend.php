@@ -53,7 +53,7 @@ class Friend_Controller extends Controller
         $res = array();
         foreach ($fids as $fid) {
             $res[] = array(
-                'id' => $fid,
+                'id' => (int)$fid,
                 'avatar' => sns::getavatar($fid),
                 'name' => sns::getrealname($fid)
             );

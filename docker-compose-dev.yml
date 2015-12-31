@@ -30,6 +30,7 @@ fpm-dev:
     - docker_mysql_1:mysql
   volumes:
     - ./web:/var/www/html
+    - ./data/logs:/logs
   dns: 192.168.99.1
 
 

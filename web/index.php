@@ -68,6 +68,19 @@ ini_set('display_errors', FALSE);
  */
 define('EXT', '.php');
 
+# 异常日志提交到sentry
+require __DIR__ . '/vendor/autoload.php';
+
+Raven_Autoloader::register();
+$client = new Raven_Client('http://23a7c48476924014864cb5080449fc83:f46608eb3384490abbbfffaed9b5c10b@120.26.217.171:9080/3', array(
+    'curl_method' => 'async',
+));
+
+$error_handler = new Raven_ErrorHandler($client);
+$error_handler->registerExceptionHandler();
+$error_handler->registerErrorHandler();
+$error_handler->registerShutdownFunction();
+
 //
 // DO NOT EDIT BELOW THIS LINE, UNLESS YOU FULLY UNDERSTAND THE IMPLICATIONS.
 // ----------------------------------------------------------------------------

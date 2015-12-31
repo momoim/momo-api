@@ -60,4 +60,6 @@ RUN docker-php-pecl-install mongo
 # php 5.6
 RUN sed -i "s/;always_populate_raw_post_data = -1/always_populate_raw_post_data = -1/" /usr/local/etc/php/php.ini
 
+RUN composer config -g repositories.packagist composer http://packagist.phpcomposer.com
+
 CMD ["php-fpm"]

@@ -1,9 +1,0 @@
-
-RUN echo "xdebug.default_enable = 1" >> /usr/local/etc/php/conf.d/docker-php-pecl-xdebug.ini
-RUN echo "xdebug.idekey = \"PHPStorm\"" >> /usr/local/etc/php/conf.d/docker-php-pecl-xdebug.ini
-RUN echo "xdebug.remote_enable = 1" >> /usr/local/etc/php/conf.d/docker-php-pecl-xdebug.ini
-RUN echo "xdebug.remote_autostart = 1" >> /usr/local/etc/php/conf.d/docker-php-pecl-xdebug.ini
-RUN echo "xdebug.remote_port = 9000" >> /usr/local/etc/php/conf.d/docker-php-pecl-xdebug.ini
-RUN echo "xdebug.remote_handler = dbgp" >> /usr/local/etc/php/conf.d/docker-php-pecl-xdebug.ini
-RUN echo "xdebug.remote_host=YYYYYYYYYYYYY" >> /usr/local/etc/php/conf.d/docker-php-pecl-xdebug.ini
-RUN echo "xdebug.remote_connect_back = on" >> /usr/local/etc/php/conf.d/docker-php-pecl-xdebug.ini

@@ -5,6 +5,7 @@
     "ext-mysql": "*",
     "ext-mysqli": "*",
     "ext-mongo": "*",
-    "ext-redis": "*"
+    "ext-redis": "*",
+    "raven/raven": "^0.13.0"
   }
 }
