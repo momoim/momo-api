@@ -57,6 +57,6 @@ ADD composer.phar /usr/local/bin/composer
 RUN composer config -g repositories.packagist composer http://packagist.phpcomposer.com
 
 # php 5.6
-#RUN sed -i "s/;always_populate_raw_post_data = -1/always_populate_raw_post_data = -1/" /usr/local/etc/php/php.ini
+RUN sed -i "s/;always_populate_raw_post_data = -1/always_populate_raw_post_data = -1/" /usr/local/etc/php/php.ini
 
 CMD ["php-fpm"]
