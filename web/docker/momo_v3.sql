@@ -3640,7 +3640,7 @@ CREATE TABLE IF NOT EXISTS `members` (
   `imid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '91通行证ID',
   `mobile` char(30) NOT NULL,
   `username` varchar(70) NOT NULL COMMENT '用户名',
-  `password` varchar(32) NOT NULL COMMENT '密码',
+  `password` varchar(64) NOT NULL COMMENT '密码',
   `or_password` varchar(200) NOT NULL,
   `regip` varchar(15) NOT NULL COMMENT '注册时IP',
   `regdate` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '注册日期',

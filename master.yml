@@ -23,8 +23,8 @@ mysql:
       - MYSQL_DATABASE=momo_v3
   volumes:
       - ./data/mysql:/var/lib/mysql
-  ports:
-    - "3310:3306"
+#  ports:
+#    - "3310:3306"
 
 fpm:
   restart: always
