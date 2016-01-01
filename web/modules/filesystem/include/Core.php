@@ -159,7 +159,7 @@ class Core {
     public static function getMongo($host, $opt) {
         //echo json_encode(debug_backtrace());
         if(!self::$mongo[$host]) {
-            self::$mongo[$host] = new Mongo($host, $opt);
+            self::$mongo[$host] = new MongoClient($host, $opt);
         }
         return self::$mongo[$host];
     }
