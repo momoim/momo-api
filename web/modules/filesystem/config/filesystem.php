@@ -74,7 +74,7 @@ if(IN_PRODUCTION === TRUE) {
     $config['quota_mocloud'] = 5368709120;
 } else {
     //gearman集群地址
-    $config['job_servers']='192.168.94.26:4730'; //如‘10.0.0.1,10.0.0.2:7003’
+    $config['job_servers']='127.0.0.1:4730'; //如‘10.0.0.1,10.0.0.2:7003’
     
     //gridfs集群地址
     $config['gridfs_servers']=array(
@@ -111,14 +111,14 @@ if(IN_PRODUCTION === TRUE) {
     $config['source_key']='i7^O';
     $config['source_key_mocloud']='!@d><';
     $config['expire_mocloud']=345600; //mocloud资源地址过期时间
-    $config['media_mocloud']='http://new.api.uap26.91.com/src/mocloud/';
+    $config['media_mocloud']='http://192.168.99.100:8080/src/mocloud/';
     $config['ndcs_mocloud']='/mnt/ndcs/';
     $config['ndcs_group']='develop';
     //图片地址
-    $config['photo_prefix']='http://new.api.uap26.91.com/src/photo/';
-    $config['avatar_prefix']='http://new.api.uap26.91.com/src/avatar/';
-    $config['thumb_prefix']='http://new.api.uap26.91.com/src/file_thumb/';
-    $config['file_prefix']='http://new.api.uap26.91.com/src/file/';
+    $config['photo_prefix']='http://192.168.99.100:8080/src/photo/';
+    $config['avatar_prefix']='http://192.168.99.100:8080/src/avatar/';
+    $config['thumb_prefix']='http://192.168.99.100:8080/src/file_thumb/';
+    $config['file_prefix']='http://192.168.99.100:8080/src/file/';
     //可上传的图片大小
     $config['photo_max_size']=10485760;
     //缩略图尺寸标准
@@ -126,7 +126,7 @@ if(IN_PRODUCTION === TRUE) {
     //缩略图质量
     $config['photo_quality']=70;
     //本地临时文件存放目录
-    $config['dir_tmp']='/tmp/momofs/';
+    $config['dir_tmp']='/tmp/';
     //log存放目录
     $config['dir_log'] = FS_ROOT . 'logs' . DS;
     

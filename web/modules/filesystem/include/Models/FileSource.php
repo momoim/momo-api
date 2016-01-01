@@ -27,7 +27,7 @@ class FileSource {
 
     public function __construct() {
         $gridfs_conf = Core::config('gridfs_servers');
-        $mongo = new Mongo($gridfs_conf['host'], $gridfs_conf['opt']);
+        $mongo = new \MongoClient($gridfs_conf['host'], $gridfs_conf['opt']);
         $this->conn = $mongo->selectDB($gridfs_conf['db']['file']);
         if(!is_NULL($gridfs_conf['user']) && !is_NULL($gridfs_conf['pwd'])) {
             $this->conn->authenticate($gridfs_conf['user'], $gridfs_conf['pwd']);

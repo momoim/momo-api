@@ -37,6 +37,8 @@ fpm:
   volumes:
     - ./web:/var/www/html
     - ./data/logs:/logs
+    - ./data/tmp:/tmp
+    - ./data/files:/data/ndcs
 
 nginx:
   restart: always

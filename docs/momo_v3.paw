@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>07ABED16-9C70-451E-8406-D471EB99E76A</UUID>
-        <nextObjectID>164</nextObjectID>
+        <nextObjectID>175</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -758,5 +758,123 @@
         <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
         <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
         <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z161"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z165">
+        <attribute name="value" type="string">application/json</attribute>
+        <attribute name="order" type="int64">0</attribute>
+        <attribute name="name" type="string">Content-Type</attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z168"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z166">
+        <attribute name="value" type="string">["Bearer ",{"data":{"request":"E606BD00-2479-49E5-A7A1-31DE5E4E3A56","keyPath":["access_token"],"format":0},"identifier":"com.luckymarmot.ResponseBodyPathDynamicValue"}]</attribute>
+        <attribute name="order" type="int64">1</attribute>
+        <attribute name="name" type="string">Authorization</attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z168"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z167">
+        <attribute name="value" type="string"></attribute>
+        <attribute name="order" type="int64">2</attribute>
+        <attribute name="name" type="string"></attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z168"></relationship>
+    </object>
+    <object type="LMREQUEST" id="z168">
+        <attribute name="uuid" type="string">681F2F06-9541-4A6C-B05D-004B16C869F4</attribute>
+        <attribute name="url" type="string">["http:\\/\\/",{"data":{"environmentVariable":"0CFA1801-D040-41CC-A8ED-FC6C697B7182"},"identifier":"com.luckymarmot.EnvironmentVariableDynamicValue"},"\\/photo\\/bp_upload"]</attribute>
+        <attribute name="storecookies" type="bool">1</attribute>
+        <attribute name="sendcookies" type="bool">1</attribute>
+        <attribute name="redirectmethod" type="bool">0</attribute>
+        <attribute name="redirectauthorization" type="bool">0</attribute>
+        <attribute name="method" type="string">POST</attribute>
+        <attribute name="followredirects" type="bool">0</attribute>
+        <attribute name="body" type="string">["{\\n\\t\\"size\\": 5274, \\n\\t\\"md5\\": \\"c5f8d1776d896234dacb4b3f3ab4e4f8\\"\\n}"]</attribute>
+        <attribute name="order" type="int64">16</attribute>
+        <attribute name="name" type="string">photo/bp_upload</attribute>
+        <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z167 z165 z166"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z169">
+        <attribute name="value" type="string">["Bearer ",{"data":{"request":"E606BD00-2479-49E5-A7A1-31DE5E4E3A56","keyPath":["access_token"],"format":0},"identifier":"com.luckymarmot.ResponseBodyPathDynamicValue"}]</attribute>
+        <attribute name="order" type="int64">1</attribute>
+        <attribute name="name" type="string">Authorization</attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z172"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z171">
+        <attribute name="value" type="string"></attribute>
+        <attribute name="order" type="int64">2</attribute>
+        <attribute name="name" type="string"></attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z172"></relationship>
+    </object>
+    <object type="LMREQUEST" id="z172">
+        <attribute name="uuid" type="string">F31435C8-26B3-4D82-9CC2-15981E90C934</attribute>
+        <attribute name="url" type="string">["http:\\/\\/",{"data":{"environmentVariable":"0CFA1801-D040-41CC-A8ED-FC6C697B7182"},"identifier":"com.luckymarmot.EnvironmentVariableDynamicValue"},"\\/photo\\/bp_upload?upload_id=",{"data":{"request":"681F2F06-9541-4A6C-B05D-004B16C869F4","keyPath":["upload_id"],"format":0},"identifier":"com.luckymarmot.ResponseBodyPathDynamicValue"},"\u2600offset=0"]</attribute>
+        <attribute name="storecookies" type="bool">1</attribute>
+        <attribute name="sendcookies" type="bool">1</attribute>
+        <attribute name="redirectmethod" type="bool">0</attribute>
+        <attribute name="redirectauthorization" type="bool">0</attribute>
+        <attribute name="method" type="string">POST</attribute>
+        <attribute name="followredirects" type="bool">0</attribute>
+        <attribute name="body" type="string">[{"data":{"keyValues":[[["file"],[{"data":{"bookmarkData":"Ym9vaxADAAAAAAQQMAAAAFjr4Hvy8qdh1kYBhQhFb5LzZl+kPQ3y7oHZfteRva53DAIAAAQAAAADAwAAABgAKAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAGxvc3QQAAAAAQEAAFBocHN0b3JtUHJvamVjdHMLAAAAAQEAAG1vbW9fdjNfYXBpAAUAAAABAQAAdGVzdHMAAAAJAAAAAQEAAHRlc3QyLnBuZwAAABgAAAABBgAAEAAAACAAAAAsAAAARAAAAFgAAABoAAAACAAAAAQDAADTkwIAAAAAAAgAAAAEAwAAb+QrAAAAAAAIAAAABAMAAE6cMAAAAAAACAAAAAQDAAAl85ECAAAAAAgAAAAEAwAASryUAgAAAAAIAAAABAMAAKYZlQIAAAAAGAAAAAEGAACcAAAArAAAALwAAADMAAAA3AAAAOwAAAAIAAAAAAQAAEG8NRrtAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAQAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAcKIzdAAAAAgAAAAABAAAQboUI0oAAAAkAAAAAQEAADlFNkYzMkQ1LTdCRTEtMzJFQi1BRDI4LUQ0NUVDOTg2M0Y0QhgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA\\/v\\/\\/\\/wEAAAAAAAAAEAAAAAQQAAB8AAAAAAAAAAUQAAD8AAAAAAAAABAQAAAsAQAAAAAAAEAQAAAcAQAAAAAAAAIgAAD4AQAAAAAAAAUgAABoAQAAAAAAABAgAAB4AQAAAAAAABEgAACsAQAAAAAAABIgAACMAQAAAAAAABMgAACcAQAAAAAAACAgAADYAQAAAAAAADAgAAAEAgAAAAAAAAHAAABMAQAAAAAAABHAAAAgAAAAAAAAABLAAABcAQAAAAAAABDQAAAEAAAAAAAAAA=="},"identifier":"com.luckymarmot.FileContentDynamicValue"}],true]]},"identifier":"com.luckymarmot.BodyMultipartFormDataDynamicValue"}]</attribute>
+        <attribute name="order" type="int64">17</attribute>
+        <attribute name="name" type="string">photo/bp_upload</attribute>
+        <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z171 z169"></relationship>
+    </object>
+    <object type="LMREQUEST" id="z173">
+        <attribute name="uuid" type="string">2637CF65-30C5-475A-B0B5-DD66B0EE1E1A</attribute>
+        <attribute name="url" type="string">http://192.168.99.100:8080/src/photo/9802144_xNirhNN7YXcW4UqHDhhmHju6nXD0rrCy6b9B8VBPE9FlQTcvknu_ZMtPnUA_130.jpg</attribute>
+        <attribute name="storecookies" type="bool">1</attribute>
+        <attribute name="sendcookies" type="bool">1</attribute>
+        <attribute name="redirectmethod" type="bool">0</attribute>
+        <attribute name="redirectauthorization" type="bool">0</attribute>
+        <attribute name="method" type="string">GET</attribute>
+        <attribute name="followredirects" type="bool">0</attribute>
+        <attribute name="body" type="string"></attribute>
+        <attribute name="order" type="int64">18</attribute>
+        <attribute name="name" type="string">src/photo</attribute>
+        <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z175 z174"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z174">
+        <attribute name="value" type="string"></attribute>
+        <attribute name="order" type="int64">2</attribute>
+        <attribute name="name" type="string"></attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z173"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z175">
+        <attribute name="value" type="string">["Bearer ",{"data":{"request":"E606BD00-2479-49E5-A7A1-31DE5E4E3A56","keyPath":["access_token"],"format":0},"identifier":"com.luckymarmot.ResponseBodyPathDynamicValue"}]</attribute>
+        <attribute name="order" type="int64">1</attribute>
+        <attribute name="name" type="string">Authorization</attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z173"></relationship>
     </object>
 </database>

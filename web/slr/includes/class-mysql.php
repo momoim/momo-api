@@ -335,7 +335,7 @@ class ezSQL_mysql extends ezSQLcore {
 
 	## Format a mySQL string correctly for safe mySQL insert (no mater if magic quotes are on or not)
 	function escape($str) {
-		return mysql_escape_string(stripslashes($str));
+		return mysql_real_escape_string(stripslashes($str));
 	}
 
 	## Return mySQL specific system date syntax

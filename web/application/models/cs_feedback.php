@@ -24,7 +24,7 @@ class Cs_Feedback_Model extends Model {
 	public function __construct() {
 		parent::__construct ();
 		
-		$mg_instance = new Mongo(Kohana::config('uap.mongodb'));
+		$mg_instance = new MongoClient(Kohana::config('uap.mongodb'));
         $this->m = $mg_instance->selectDB(MONGO_DB_CALLSHOW);
         $this->feedback = $this->m->selectCollection('feedback');
 	}

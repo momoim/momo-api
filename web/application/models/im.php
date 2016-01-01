@@ -1017,7 +1017,7 @@ class Im_Model extends Model {
     public function get_map_history($page,$pagesize,$keyword){
         $limit=(($page-1)*$pagesize).','.$pagesize;
 
-        if($keyword) $cond = " AND `address` LIKE '%".mysql_escape_string($keyword)."%'";
+        if($keyword) $cond = " AND `address` LIKE '%".mysql_real_escape_string($keyword)."%'";
         else $cond = "";
 
         $sql="SELECT SQL_CALC_FOUND_ROWS * FROM ". $this->table('im_geohistory') ." WHERE `uid`={$this->uid}{$cond} ORDER BY `ctime` DESC LIMIT {$limit}";

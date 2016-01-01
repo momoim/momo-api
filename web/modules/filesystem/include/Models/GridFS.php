@@ -73,7 +73,7 @@ class GridFS {
             $fields['fs_group_name'] = $r['group_name'];
             $fields['fs_filename'] = $r['filename'];
             $mongocol = $this->parent->_getCollection();
-            $r2 = $mongocol->insert($fields, TRUE);
+            $r2 = $mongocol->insert($fields);
             if($r2) 
                 return $fields['_id'];
         }

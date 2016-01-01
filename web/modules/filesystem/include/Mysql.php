@@ -11,26 +11,30 @@ class Mysql {
 
     private $querynum = 0;
 
-    private $link = null;
+    private $db = null;
+
+    //private $link = null;
 
     private $in_transaction = FALSE;
     //连接数据库 pconnect持久连接 halt 报告连接错误 dbcharset2手动设置mysql编码
     function connect($dbhost, $dbuser, $dbpw, $dbname = '', $pconnect = 0, $halt = TRUE, $dbcharset2 = '') {
-        $this->conn_str = array($dbhost, $dbuser, $dbpw, $dbname, $pconnect, $halt, $dbcharset2);
-        $func = empty($pconnect) ? 'mysql_connect' : 'mysql_pconnect';
-        if(!$this->link = @$func($dbhost, $dbuser, $dbpw, 1)) {
+        $t = new mysqli($dbhost, $dbuser, $dbpw);
+        $this->db = $t;
+
+        if($this->db->connect_errno > 0){
             $halt && $this->halt('Can Not Connect to MySQL');
         } else {
             $idbcharset = $dbcharset2 ? $dbcharset2 : 'utf8';
             $serverset = $idbcharset ? 'character_set_connection=' . $idbcharset . ', character_set_results=' . $idbcharset . ', character_set_client=binary' : '';
             $serverset .= $this->version() > '5.0.1' ? ((empty($serverset) ? '' : ',') . 'sql_mode=\'\'') : '';
-            $serverset && mysql_query("SET $serverset", $this->link);
-            $dbname && @mysql_select_db($dbname, $this->link);
+            $serverset && $this->db->query("SET $serverset");
+            $dbname && $this->db->select_db($dbname);
         }
+        $this->conn_str = array($dbhost, $dbuser, $dbpw, $dbname, $pconnect, $halt, $dbcharset2);
     }
 
     function selectDb($dbname) {
-        return mysql_select_db($dbname, $this->link);
+        return $this->db->select_db($dbname);
     }
     /**
      * 事务开始
@@ -66,7 +70,7 @@ class Mysql {
      * 获取数据使用MYSQL_ASSOC方式
      */
     function fetchArray($query, $result_type = MYSQL_ASSOC) {
-        return mysql_fetch_array($query, $result_type);
+        return $query->fetch_array($result_type);
     }
 
     function fetchFirst($sql) {
@@ -78,12 +82,7 @@ class Mysql {
     }
 
     function query($sql, $type = '') {
-        $func = $type == 'UNBUFFERED' && @function_exists('mysql_unbuffered_query') ? 'mysql_unbuffered_query' : 'mysql_query';
-        if(! is_resource($this->link)) {
-            $this->halt('MySQL Connection Lost', $sql);
-            return FALSE;
-        }
-        if(!($query = $func($sql, $this->link))) {
+        if (!($query = $this->db->query($sql))) {
             if(in_array($this->errno(), array(2006, 2013)) && substr($type, 0, 5) != 'RETRY') {
                 $this->close();
                 list($dbhost, $dbuser, $dbpw, $dbname, $pconnect, $halt, $dbcharset) = $this->conn_str;
@@ -93,55 +92,83 @@ class Mysql {
                 $this->halt('MySQL Query Error', $sql);
             }
         }
+
         $this->querynum++;
         return $query;
     }
 
     function affectedRows() {
-        return mysql_affected_rows($this->link);
+        return $this->db->affected_rows();
     }
 
     function error() {
-        return(($this->link) ? mysql_error($this->link) : mysql_error());
+        return $this->db->error;
     }
 
     function errno() {
-        return intval(($this->link) ? mysql_errno($this->link) : mysql_errno());
+        return intval($this->db->errno);
     }
 
     function result($query, $row = 0) {
-        $query = @mysql_result($query, $row);
-        return $query;
+        $r = null;
+        $i = 0;
+        while($i <= $row) {
+            $r = $query->fetch_assoc();
+            $i++;
+            if (!$r) {
+                return false;
+            }
+        }
+        return $r;
     }
 
     function numRows($query) {
-        $query = mysql_num_rows($query);
+        $query = $query->num_rows();
         return $query;
     }
 
     function numFields($query) {
-        return mysql_num_fields($query);
+        return $query->num_fields();
     }
 
     function freeResult($query) {
-        return mysql_free_result($query);
+        return $query->free();
     }
 
     function insertId() {
-        return($id = mysql_insert_id($this->link)) >= 0 ? $id : $this->result($this->query("SELECT last_insert_id()"), 0);
+        $id = $this->db->insert_id;
+        if ($id >= 0) {
+            return $id;
+        } else {
+            return $this->result($this->query("SELECT last_insert_id()"), 0);
+        }
     }
 
     function fetchRow($query) {
-        $query = mysql_fetch_row($query);
-        return $query;
+        return $query->fetch_row();
     }
 
     function fetchFields($query) {
-        return mysql_fetch_field($query);
+        return $query->fetch_fields();
+    }
+
+    function quote2($str) {
+        $result = $this->db->real_escape_string($str);
+        if(is_string($result)) {
+            return "'$result'";
+        } elseif($result == '') {
+            return "NULL";
+        } else {
+            return $result;
+        }
     }
 
     static function quote($str) {
-        $result = mysql_escape_string($str);
+        $search = [ "\\", "\r", "\n", "\x1a", "\x00", "'", "\""];
+        $replace = ["\\\\",  "\\r", "\\n", "\\Z", "\\0", "\\'", "\\\""];
+
+        $result = str_replace($search, $replace, $str);
+
         if(is_string($result)) {
             return "'$result'";
         } elseif($result == '') {
@@ -153,13 +180,13 @@ class Mysql {
 
     function version() {
         if(empty($this->version)) {
-            $this->version = mysql_get_server_info($this->link);
+            $this->version = $this->db->server_info;
         }
         return $this->version;
     }
 
     function close() {
-        return mysql_close($this->link);
+        $this->db->close();
     }
 
     function halt($message = '', $sql = '') {
@@ -167,9 +194,6 @@ class Mysql {
         if($dberrno == 1114) {
             $message = 'Max Onlines Reached';
         }
-
-        if(Core::$start_time) Core::debug('trace', Core::client_ip()."\t".Core::$start_time."\tmysql_halt\t" . $message . "\t" . $sql . "\t" . $this->errno() . "\t" . $this->error());
-        //MongoLogger::instance()->log('mysqlerror',$message . "\t" . $sql . "\t" . $this->errno() . "\t" . $this->error() ."\t" . Core::server_addr());
     }
 }
 ?>

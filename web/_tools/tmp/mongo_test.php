@@ -7,7 +7,7 @@ $config['mongodb'] = 'mongodb://fsnew23FS4:fs24234FWdkfFKW@localhost:27017';
 $config['mongodb2'] = 'mongodb://fsnew23FS4:fs24234FWdkfFKW@localhost:27017';
 foreach ($config as $server) {
     // connect
-    $m = new Mongo($server);
+    $m = new MongoClient($server);
     
     // select a database
     $db = $m->momo;

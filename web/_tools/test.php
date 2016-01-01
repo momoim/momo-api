@@ -1,5 +1,5 @@
 <?php
-$mg_instance = new Mongo('mongodb://10.1.242.243:27027,10.1.242.241:27027');
+$mg_instance = new MongoClient('mongodb://10.1.242.243:27027,10.1.242.241:27027');
 $m = $mg_instance->selectDB ( 'momo_v3' );
 $feed = $m->selectCollection ( 'feed_new' );
 $col = $feed->find ( array('mix_id'=>'1'))->sort ( array ('last_updated' => - 1 ) )->limit (20);

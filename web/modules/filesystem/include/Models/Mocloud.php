@@ -228,11 +228,11 @@ class Mocloud {
 
     public function create() {
         $time_now = time()+1;
-        
+
         if($this->datetime){
             $this->created_at = strtotime($this->datetime);
         }
-        
+
         $data = $this->as_array();
         //自己的这台设备已经上传过这张照片
         if($this->where(array('md5' => $this->md5, 'device_id' => $this->device_id, 'name' => $this->name))->get()) {
@@ -269,9 +269,9 @@ class Mocloud {
         $this->uploaded_at = $time_now;
         $data = $this->as_array();
         foreach($data as $field => $val) {
-            if(is_string($val)) 
+            if(is_string($val))
                 $data[$field] = Mysql::quote($val);
-            elseif(is_null($val)) 
+            elseif(is_null($val))
                 $data[$field] = 'NULL';
         }
         $sql = "INSERT INTO `mocloud` (`" . implode('`,`', array_keys($data)) . "`) VALUES (" . implode(',', $data) . ")";
@@ -294,9 +294,9 @@ class Mocloud {
         }
         if(! $in_path)
             return FALSE;
-        
+
         $mcSource = $this->get_source();
-        
+
         $mcSource->uploader = $uploader;
         //只传数据的引用
         $mcSource->in_path = $in_path;
@@ -337,28 +337,28 @@ class Mocloud {
         }
         $this->meta = implode(',', $meta);
         $this->uploaded = 1;
-        
+
         $done = $this->save(array('md5', 'mime', 'client_id', 'uploaded', 'meta', 'created_at', 'size'));
         $this->_update_stats($this->size, 1);
-        
+
         $thumbnail=$this->set_thumbnail($mcSource);
         $this->set_meta($this->fs_group,$this->fs_filename,$this->md5,$this->size,$metadata,$thumbnail);
         $mcSource->clear();
-        
+
         $this->update_last_upload_time();
         return $done;
     }
-    
+
     public function update_last_upload_time(){
         $db = $this->get_db();
         $db->query("UPDATE `mocloud_device` SET last_upload_time=".time()." WHERE uid=".$this->uid." AND device_id='{$this->device_id}'");
     }
-    
+
     public function set_thumbnail($mcSource,$size=''){
         $imagine = new Imagine();
         //Imagick Imagine 的 save() 参数已被修改过加入了 orientation 项的支持
         //Imagick 只能对已经存在exif的图片去update orientation信息不能 add 一个exif项 改为其他第三方实现
-        
+
         $humbnail=array();
         //上传成功就生成1024的图
         if($size==''){
@@ -370,7 +370,7 @@ class Mocloud {
             $thumb_1024 = Core::tempname($this->md5 . '_tn-1024.jpg');
             $image->thumbnail(new Box(1024, 1024))->save($thumb_1024);
             //Core::attach_exif($thumb_480, array('orientation' => $fileinfo['orientation']));
-            
+
             $humbnail['tn-1024']=$this->upload_thumbnail($thumb_1024);
         }else{
             $meta=$this->get_meta();
@@ -381,35 +381,35 @@ class Mocloud {
             }else{
                 $thumb_fs_filename=$meta['thumbnail']['tn-1024'];
             }
-            
+
             if($thumb_fs_filename){
                 $source=new MocloudNDFS('',$thumb_fs_filename);
                 $uploader = $source->get_uploader();
             }else{
                 $uploader = $mcSource->get_uploader();
             }
-            
+
             if(! file_exists($uploader->tmpfile)){
                 return FALSE;
             }
-            
+
             $size_wh = substr($size, 3);
             $image = $imagine->open($uploader->tmpfile);
             $thumb = Core::tempname($this->md5 . '_' . $size . '.jpg');
-            
+
             if(substr($size, 0, 2) == 'sq'){
                 $image->thumbnail(new Box($size_wh, $size_wh), ImageInterface::THUMBNAIL_OUTBOUND)->save($thumb);
             }else{
                 $image->thumbnail(new Box($size_wh, $size_wh))->save($thumb);
             }
             //Core::attach_exif($thumb_480, array('orientation' => $fileinfo['orientation']));
-            
+
             $humbnail[$size]=$this->upload_thumbnail($thumb);
         }
 
         return $humbnail;
     }
-    
+
     public function upload_thumbnail($thumbfile){
         $source=new MocloudNDFS();
         $source->in_path=$thumbfile;
@@ -418,15 +418,15 @@ class Mocloud {
         if($fs_file=$source->append_buff()){
             return $fs_file['filename'];
         }
-        
+
         return '';
     }
-    
+
     private $mongo=NULL;
     private function get_mongo(){
         if(! $this->mongo){
             $gridfs_conf = Core::config('gridfs_servers');
-            $mongo = new Mongo($gridfs_conf['host'], $gridfs_conf['opt']);
+            $mongo = new \MongoClient($gridfs_conf['host'], $gridfs_conf['opt']);
             $mongodb = $mongo->selectDB($gridfs_conf['db']['pcloud']);
             if(!is_NULL($gridfs_conf['user']) && !is_NULL($gridfs_conf['pwd'])) {
                 $mongodb->authenticate($gridfs_conf['user'], $gridfs_conf['pwd']);
@@ -435,7 +435,7 @@ class Mocloud {
         }
         return $this->mongo;
     }
-    
+
     public function set_meta($fs_group,$fs_filename,$md5,$size,$meta,$thumbnail){
         $doc=array(
             'md5'=>$md5,
@@ -445,10 +445,10 @@ class Mocloud {
             'meta'=>json_encode($meta),
             'thumbnail'=>$thumbnail
         );
-        
+
         $r = $this->get_mongo()->insert($doc, TRUE);
     }
-    
+
     public function get_meta(){
         if($this->fs_filename){
             if($doc = $this->get_mongo()->findOne(array('fs_filename' => (string)$this->fs_filename))) {
@@ -457,14 +457,14 @@ class Mocloud {
         }
         return array();
     }
-    
+
     public function update_meta($data){
         if($this->fs_filename){
             return $this->get_mongo()->update(array('fs_filename' => (string)$this->fs_filename), array('$set' => $data));
         }
     }
     /**
-     * 
+     *
      * 获取用户所有的上传信息
      */
     public function get_upload_info_all($dateline, $pagesize) {
@@ -524,13 +524,13 @@ class Mocloud {
         return array('dateline' => time(), 'add' => $result, 'del' => $result_del);
     }
     /**
-     * 
+     *
      * 根据md5判断是否上传以及是否上传完整
      * @param array $md5_list
      * @param string $field
      */
     public function get_upload_info($md5_list, $field = 'md5') {
-        if(empty($md5_list)) 
+        if(empty($md5_list))
             return array();
         $result = array();
         if($rowset = $this->where(array($field => $md5_list))->get_all()) {
@@ -555,7 +555,7 @@ class Mocloud {
         return $r;
     }
     /**
-     * 
+     *
      * 获取上传列表
      * @param int $type
      * @param string $asc
@@ -571,29 +571,29 @@ class Mocloud {
         $order_field = array('orig_time' => 'created_at', 'name' => 'name');
         $orderby = '';
         if($asc) {
-            if($asc = $order_field[$asc]) 
+            if($asc = $order_field[$asc])
                 $orderby = "`$asc` ASC";
         }
         if($desc) {
-            if($desc = $order_field[$desc]) 
+            if($desc = $order_field[$desc])
                 $orderby = "`$desc` DESC";
         }
         $limit = (($page - 1) * $pagesize) . ',' . $pagesize;
         //已上传且没有删除
         $where = array('type' => $type, 'uploaded' => 1, 'deleted_at' => 0);
-        if($device_id) 
+        if($device_id)
             $where['device_id'] = $device_id;
         if($star)
             $where[] = "`star` = 1";
-        if($otime_start) 
+        if($otime_start)
             $where[] = "`created_at` >= {$otime_start}";
-        if($otime_end) 
+        if($otime_end)
             $where[] = "`created_at` < {$otime_end}";
         if($utime_start)
             $where[] = "`uploaded_at` >= {$utime_start}";
         if($utime_end)
             $where[] = "`uploaded_at` < {$utime_end}";
-        if($keyword) 
+        if($keyword)
             $where[] = "`name` LIKE '%{$keyword}%'";
         $result = array();
         $count = 0;
@@ -616,7 +616,7 @@ class Mocloud {
         }
         return array('count' => $count, 'data' => $result);
     }
-    
+
     /**
      * 按日期分组
      * @param int $type
@@ -629,7 +629,7 @@ class Mocloud {
                     (SELECT id,name,FROM_UNIXTIME(uploaded_at,'%Y%m') AS upload_date FROM `mocloud` 
                         WHERE `uid`={$this->uid} AND {$cond} ORDER BY uploaded_at DESC) 
                 AS tmp GROUP BY upload_date";
-        
+
         $db=$this->get_db();
         $query = $db->query($sql);
         $result = array();
@@ -639,17 +639,17 @@ class Mocloud {
             }
             $year = substr($row['upload_date'], 0, 4);
             $month = substr($row['upload_date'], 4, 2);
-            
+
             $result[$year][] = array(
                     'month' => $month,
-                    'src' => $this->get_uri($row), 
+                    'src' => $this->get_uri($row),
                     'count' => $row['total']
                     );
         }
-        
+
         return $result;
     }
-    
+
     public function get_upload_list_recent($type, $page, $pagesize){
         $sql = "SELECT `uploaded_at`,`device_id` FROM `mocloud` WHERE `uid`={$this->uid} AND `uploaded`=1 AND `deleted_at`=0 ORDER BY `id` DESC LIMIT 1";
         $db = $this->get_db();
@@ -660,9 +660,9 @@ class Mocloud {
             $where = array('type' => $type, 'uploaded' => 1, 'deleted_at' => 0);
             $where['device_id'] = $row['device_id'];
             $where[] = "from_unixtime(`uploaded_at`,'%Y%m%d') = '".date('Ymd', $row['uploaded_at'])."'";
-            
+
             $limit = (($page - 1) * $pagesize) . ',' . $pagesize;
-            
+
             $result = array();
             $count = 0;
             if($rowset = $this->where($where)->order("`id` DESC")->limit($limit)->select('SQL_CALC_FOUND_ROWS *')->get_all()) {
@@ -687,7 +687,7 @@ class Mocloud {
         return array('count' => 0, 'data' => array());
     }
     /**
-     * 
+     *
      * 获取统计
      */
     public function get_stats() {
@@ -711,7 +711,7 @@ class Mocloud {
         return $result;
     }
     /**
-     * 
+     *
      * 重新统计
      */
     public function get_stats_latest($update_cache = TRUE) {
@@ -720,7 +720,7 @@ class Mocloud {
             WHERE `uid`={$this->uid} AND `uploaded`=1 AND `deleted_at`=0";
         $db = $this->get_db();
         $query = $db->query($sql);
-        
+
         $row = $db->fetchArray($query);
         $file_quota[1] = $row['file_quota'];
         $file_count[1] = $row['file_count'];
@@ -742,7 +742,7 @@ class Mocloud {
         }
         return array($file_quota, $file_count);
     }
-    
+
     public function get_stats_device(){
         $sql = "SELECT `device_id`,MAX(`uploaded_at`) AS backup_time,SUM(`size`) AS total_size,COUNT(`id`) AS file_count
             FROM `mocloud` WHERE `uid`={$this->uid} AND `uploaded`=1 AND `deleted_at`=0 GROUP BY `device_id`";
@@ -752,27 +752,27 @@ class Mocloud {
         while($row = $db->fetchArray($query)) {
             $result[] = array('device_id' => $row['device_id'], 'backup_time' => $row['backup_time'], 'count_photo' => $row['file_count'], 'quota_used' => $row['total_size'],);
         }
-    
+
         $bind_devices = $this->get_bind_device(NULL, FALSE);
         $bind_devices_kv = array();
         foreach ($bind_devices as $row){
             $bind_devices_kv[$row['device_id']] = $row;
         }
-    
+
         $r = array();
         foreach ($result as $row){
             $row['device_name'] = $bind_devices_kv[$row['device_id']]['name'];
             $row['device_model'] = $bind_devices_kv[$row['device_id']]['model'];
             $row['device_type'] = $this->_get_device_type($bind_devices_kv[$row['device_id']]['model']);
-            $row['last_upload_time'] = $bind_devices_kv[$row['device_id']]['last_upload_time'] 
-                                        ? $bind_devices_kv[$row['device_id']]['last_upload_time'] 
+            $row['last_upload_time'] = $bind_devices_kv[$row['device_id']]['last_upload_time']
+                                        ? $bind_devices_kv[$row['device_id']]['last_upload_time']
                                         : $row['backup_time'];
             $row['device_alias'] = \Brand_Model::instance()->get_by_model($bind_devices_kv[$row['device_id']]['model']);
             $r[] = $row;
         }
         return $r;
     }
-    
+
     private function _get_device_type($device_model){
         if(preg_match('/web/is', $device_model)){
             return 'web';
@@ -784,7 +784,7 @@ class Mocloud {
             return 'android';
         }
     }
-    
+
     public function get_stats_star(){
         $sql = "SELECT MAX(`uploaded_at`) AS backup_time,SUM(`size`) AS total_size,COUNT(`id`) AS file_count
             FROM `mocloud` WHERE `uid`={$this->uid} AND `uploaded`=1 AND `deleted_at`=0 AND `star`=1";
@@ -801,7 +801,7 @@ class Mocloud {
                 WHERE `uid`={$this->uid}";
         $db->query($sql);
     }
-    
+
     private function _insert_stats($uid, $client_id=0, $appid=0, $created_at=0){
         $db = $this->get_db();
         $quota_all= Core::config('quota_mocloud');
@@ -810,7 +810,7 @@ class Mocloud {
                 VALUES ({$uid},0,{$quota_all},0,0,{$client_id},{$appid},{$created_at})";
         $db->query($sql);
     }
-    
+
     private function _register_user(){
         $client_id = Core::getClientID();
         $appid = Core::getAPPID();
@@ -829,7 +829,7 @@ class Mocloud {
         }
     }
     /**
-     * 
+     *
      * 设置绑定信息
      * @param string $device_id
      * @param array $device_info
@@ -852,7 +852,7 @@ class Mocloud {
             }
             //第一次绑定
             $this->_register_user();//创建唯一一条用户使用记录
-            
+
             $device_id = Mysql::quote($device_id);
             foreach($device_info as $k => $v) {
                 $device_info[$k] = Mysql::quote($v);
@@ -878,7 +878,7 @@ class Mocloud {
      */
     public function get_bind_device($device_id = NULL, $exclude_del = TRUE) {
         $db = $this->get_db();
-        
+
         $cond='';
         if($exclude_del){
             $cond=' AND `deleted_at`=0';
@@ -910,7 +910,7 @@ class Mocloud {
         }
         return $result;
     }
-    
+
     public function set_star($idarr, $op){
         $ids = array();
         foreach($idarr as $id){
@@ -925,9 +925,9 @@ class Mocloud {
             return FALSE;
         }
     }
-    
+
     /**
-     * 
+     *
      * 图片预览地址
      * @param array $row
      * @param string $size 'sq-150','tn-100'...
@@ -963,14 +963,14 @@ class Mocloud {
         $this->get_source()->output($offset);
         Core::quit();
     }
-    
+
     public function output_thumbnail($size,$offset=0){
         if(! in_array($size, array('tn-480','tn-100','tn-150','sq-150'))){
             return;
         }
-        
+
         $thumb_file = Core::tempname($this->md5 . '_' . $size . '.jpg');
-        
+
         if(! file_exists($thumb_file)) {
             $meta=$this->get_meta();
             if($thumb_fs_filename=$meta['thumbnail'][$size]){//ndfs缓存
@@ -996,17 +996,17 @@ class Mocloud {
             Core::quit();
         }
     }
-    
+
     private function _readfile($thumb_file,$offset=0){
         $size = filesize($thumb_file);
-        
+
         if($offset > 0){
             Core::header("Content-Length:".($size-$offset));
             Core::header("Content-Range:bytes {$offset}-".($size-1)."/{$size}");
         }else{
             Core::header("Content-Length:$size");
         }
-        
+
         $file = fopen($thumb_file, 'rb');
         if($file){
             fseek($file, $offset);
@@ -1017,7 +1017,7 @@ class Mocloud {
     }
 
     public function delete($arr, $field = 'id') {
-        if(!$arr) 
+        if(!$arr)
             return TRUE;
         $newarr = array();
         foreach($arr as $val) {
@@ -1027,7 +1027,7 @@ class Mocloud {
         if(in_array($field, array('id','device_id','md5'))) {
             $query = $this->get_db()->query("SELECT SUM(`size`),COUNT(`id`) FROM `mocloud` WHERE `uid`={$this->uid} AND `uploaded`=1 AND `deleted_at`=0 AND `{$field}` IN (" . implode(',', $newarr) . ")");
             $row = $this->get_db()->fetchRow($query);
-            
+
             $sql = "UPDATE `mocloud` SET `deleted_at`=" . time() . " WHERE `uid`={$this->uid} AND `uploaded`=1 AND `deleted_at`=0 AND `{$field}` IN (" . implode(',', $newarr) . ")";
             if($this->get_db()->query($sql)) {
                 //更新统计
@@ -1045,7 +1045,7 @@ class Mocloud {
         }
     }
     /**
-     * 
+     *
      * 只能删除未上传完整的资源
      */
     public function destroy() {

@@ -1,4 +1,4 @@
-FROM index.alauda.cn/library/php:5.6-fpm
+FROM index.alauda.cn/library/php:5.4-fpm
 
 MAINTAINER lost <dragon829@gmail.com>
 
@@ -10,6 +10,9 @@ RUN echo "deb http://mirrors.163.com/debian/ jessie main non-free contrib\n"\
 "deb-src http://mirrors.163.com/debian/ jessie-backports main non-free contrib\n"\
 "deb http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib\n"\
 "deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib" > /etc/apt/sources.list
+
+# Add pecl
+COPY docker-php-pecl-install /usr/local/bin/
 
 # Install other needed extensions
 RUN apt-get update && apt-get install -y libfreetype6 libjpeg62-turbo libmcrypt4 libpng12-0 sendmail --no-install-recommends && rm -rf /var/lib/apt/lists/*
@@ -33,17 +36,15 @@ RUN buildDeps=" \
 	&& docker-php-ext-install mysqli \
 	&& docker-php-ext-install pdo_mysql \
 	&& docker-php-ext-install zip \
+	&& docker-php-ext-install exif \
 	&& apt-get purge -y --auto-remove $buildDeps \
 	&& cd /usr/src/php \
 	&& make clean
 
-# Install Composer
-ADD composer.phar /usr/local/bin/composer
-
-# Add pecl
-COPY docker-php-pecl-install /usr/local/bin/
-
-RUN docker-php-pecl-install redis
+RUN apt-get update && apt-get install -y libz-dev libmemcached-dev libssl-dev gearman-job-server libgearman-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
+COPY ext /tmp/ext
+RUN docker-php-pecl-install /tmp/ext/gearman-1.1.2.tgz /tmp/ext/memcache-2.2.7.tgz /tmp/ext/mongo-1.6.12.tgz /tmp/ext/redis-2.2.7.tgz \
+    && docker-php-ext-enable gearman memcache mongo redis
 
 # Setup timezone to Asia/Shanghai
 RUN cat /usr/src/php/php.ini-production | sed 's/^;\(date.timezone.*\)/\1 \"Asia\/Shanghai\"/' > /usr/local/etc/php/php.ini
@@ -51,15 +52,11 @@ RUN cat /usr/src/php/php.ini-production | sed 's/^;\(date.timezone.*\)/\1 \"Asia
 # Disable cgi.fix_pathinfo in php.ini
 RUN sed -i 's/;\(cgi\.fix_pathinfo=\)1/\10/' /usr/local/etc/php/php.ini
 
-RUN apt-get update && apt-get install -y libz-dev libmemcached-dev
-RUN docker-php-pecl-install memcache
-
-RUN apt-get update && apt-get install -y libssl-dev
-RUN docker-php-pecl-install mongo
+# Install Composer
+ADD composer.phar /usr/local/bin/composer
+RUN composer config -g repositories.packagist composer http://packagist.phpcomposer.com
 
 # php 5.6
-RUN sed -i "s/;always_populate_raw_post_data = -1/always_populate_raw_post_data = -1/" /usr/local/etc/php/php.ini
-
-RUN composer config -g repositories.packagist composer http://packagist.phpcomposer.com
+#RUN sed -i "s/;always_populate_raw_post_data = -1/always_populate_raw_post_data = -1/" /usr/local/etc/php/php.ini
 
 CMD ["php-fpm"]
