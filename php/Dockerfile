@@ -1,4 +1,4 @@
-FROM index.alauda.cn/library/php:5.4-fpm
+FROM index.alauda.cn/library/php:5.6-fpm
 
 MAINTAINER lost <dragon829@gmail.com>
 
