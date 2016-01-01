@@ -843,7 +843,7 @@
     </object>
     <object type="LMREQUEST" id="z173">
         <attribute name="uuid" type="string">2637CF65-30C5-475A-B0B5-DD66B0EE1E1A</attribute>
-        <attribute name="url" type="string">http://192.168.99.100:8080/src/photo/9802144_xNirhNN7YXcW4UqHDhhmHju6nXD0rrCy6b9B8VBPE9FlQTcvknu_ZMtPnUA_130.jpg</attribute>
+        <attribute name="url" type="string">http://api.momo.im/src/photo/1_xNirhNN7YXcW4RrUWBJlTm3tlCGi_ufn4b5JwFFJF9RnfTMikXk_130.jpg</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>

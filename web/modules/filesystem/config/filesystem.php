@@ -111,14 +111,14 @@ if(IN_PRODUCTION === TRUE) {
     $config['source_key']='i7^O';
     $config['source_key_mocloud']='!@d><';
     $config['expire_mocloud']=345600; //mocloud资源地址过期时间
-    $config['media_mocloud']='http://192.168.99.100:8080/src/mocloud/';
+    $config['media_mocloud']='http://api.momo.im/src/mocloud/';
     $config['ndcs_mocloud']='/mnt/ndcs/';
     $config['ndcs_group']='develop';
     //图片地址
-    $config['photo_prefix']='http://192.168.99.100:8080/src/photo/';
-    $config['avatar_prefix']='http://192.168.99.100:8080/src/avatar/';
-    $config['thumb_prefix']='http://192.168.99.100:8080/src/file_thumb/';
-    $config['file_prefix']='http://192.168.99.100:8080/src/file/';
+    $config['photo_prefix']='http://api.momo.im/src/photo/';
+    $config['avatar_prefix']='http://api.momo.im/src/avatar/';
+    $config['thumb_prefix']='http://api.momo.im/src/file_thumb/';
+    $config['file_prefix']='http://api.momo.im/src/file/';
     //可上传的图片大小
     $config['photo_max_size']=10485760;
     //缩略图尺寸标准
