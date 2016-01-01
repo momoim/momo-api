@@ -1,7 +1,5 @@
 ## MOMO API
 
-## docker+git发布版本
-
 ### 开发
 
 - 本地安装docker和docker-compose
