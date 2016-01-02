@@ -1,12 +1,12 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 *.pyc
-
+*~
 ### CodeIgniter template
 */logs/*.php
 !*/logs/index.html
 */cache/*
 !*/cache/index.html
 !*/cache/.htaccess
-
+.DS_Store
 /data

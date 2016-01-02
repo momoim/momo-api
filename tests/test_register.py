@@ -8,7 +8,7 @@ import logging
 URL = "http://192.168.99.100:8080"
 
 
-mobile = "13800000001"
+mobile = "13800000002"
 
 obj = {
     "mobile":mobile,
