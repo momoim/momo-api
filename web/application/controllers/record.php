@@ -140,7 +140,6 @@ class Record_Controller extends Controller {
         	if(empty($location['address'])) {
         		$location['address'] = lbs::get_address_by_location($location['longitude'],$location['latitude']);
         	}
-        	Im_Model::instance()->add_map_history($location['address'],$location['latitude'],$location['longitude'],$location['is_correct']);
         }
         
         $accessery = array();
