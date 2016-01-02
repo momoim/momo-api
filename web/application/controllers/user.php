@@ -67,7 +67,7 @@ class User_Controller extends Controller implements FS_Gateway_Core, User_Interf
         ));
 
         $this->send_response(200, array(
-                'id' => $user ['uid'],
+                'id' => (int)$user ['uid'],
                 'name' => $user ['username'],
                 'avatar' => sns::getavatar($user ['uid']),
                 'access_token' => $token ['access_token'],

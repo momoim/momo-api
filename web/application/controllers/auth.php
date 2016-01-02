@@ -61,6 +61,7 @@ class Auth_Controller extends Controller
 
     public function verify_code()
     {
+
         if ($this->get_method() != 'POST') {
             $this->send_response(405, NULL, '请求的方法不存在');
         }
@@ -114,6 +115,10 @@ class Auth_Controller extends Controller
         $mobile = isset($data['mobile']) ? $data['mobile'] : '';
         $code = isset($data['code']) ? $data['code'] : '';
 
+        if (!international::check_is_valid($zone_code, $mobile)) {
+            $this->send_response(400, NULL, Kohana::lang('authorization.mobile_invalid'));
+        }
+
         $username = $this->model->get_full_mobile($zone_code, $mobile);
 
         if (!$this->is_test_mobile($mobile)) {
@@ -127,15 +132,19 @@ class Auth_Controller extends Controller
             $id = $user['id'];
         } else {
             $regip = $this->get_ip();
-
             $id = $this->model->create_user($zone_code, $mobile, '', $regip);
         }
 
         $token = $this->model->create_token(3600, TRUE, array(
             'zone_code' => $zone_code,
             'mobile' => $mobile,
-            'id' => (int)$id
+            'id' => (int)$id,
         ));
+
+        if ($user) {
+            $token['name'] = $user['username'];
+            $token['avatar'] = sns::getavatar($user['id']);
+        }
 
         $this->send_response(200, $token);
     }
