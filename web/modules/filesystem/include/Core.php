@@ -366,7 +366,6 @@ class Core {
     
     public static function quit(){
         self::tempname_clear();
-        Driver\MocloudNDFS::ndfs_quit();
         Models\GridFS::fdfs_quit();
         
         if(self::$start_time) self::debug('trace', self::client_ip()."\t".self::$start_time."\t".microtime(TRUE));
