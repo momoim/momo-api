@@ -3743,62 +3743,6 @@ CREATE TABLE IF NOT EXISTS `membersinfo` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `membersinfo_v2`
---
-
-CREATE TABLE IF NOT EXISTS `membersinfo_v2` (
-  `uid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '用户ID',
-  `email` varchar(32) NOT NULL COMMENT '邮箱',
-  `emailcheck` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '邮箱是否已经验证',
-  `realname` varchar(30) NOT NULL COMMENT '真实姓名',
-  `familyname` varchar(20) NOT NULL,
-  `givenname` varchar(20) NOT NULL,
-  `idcard` varchar(18) NOT NULL COMMENT '身份证号码',
-  `vip` tinyint(2) unsigned NOT NULL DEFAULT '0' COMMENT 'VIP星级',
-  `mobile` char(11) NOT NULL COMMENT '手机号码',
-  `telephone` varchar(20) NOT NULL COMMENT '电话号码',
-  `sex` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0=保密，1=男，2=女',
-  `qq` varchar(20) NOT NULL COMMENT 'QQ号码',
-  `msn` varchar(32) NOT NULL COMMENT 'MSN帐号',
-  `homepage` varchar(100) NOT NULL COMMENT '个人主页',
-  `sign` varchar(140) NOT NULL COMMENT '个人签名',
-  `birthyear` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '出生年份',
-  `birthmonth` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '出生月',
-  `birthday` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '出生日',
-  `is_lunar` tinyint(1) NOT NULL,
-  `blood` varchar(5) NOT NULL COMMENT '血型 ',
-  `marry` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '婚否，0=保密、1=单身、2=非单身',
-  `astro` tinyint(2) unsigned NOT NULL DEFAULT '0' COMMENT '星座',
-  `zodiac` tinyint(2) unsigned NOT NULL DEFAULT '0' COMMENT '生肖',
-  `work` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT '职业',
-  `avatar` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `birthcountry` varchar(20) NOT NULL COMMENT '出生国家',
-  `birthprovince` varchar(20) NOT NULL COMMENT '出生省份',
-  `birthcity` varchar(20) NOT NULL COMMENT '出生城市 ',
-  `residecountry` varchar(20) NOT NULL COMMENT '居住国家',
-  `resideprovince` varchar(20) NOT NULL COMMENT '所在省份',
-  `residecity` varchar(20) NOT NULL COMMENT '所在城市 ',
-  `note` varchar(255) NOT NULL COMMENT '备注',
-  `authstr` varchar(20) NOT NULL,
-  `friend` mediumtext NOT NULL,
-  `feedfriend` mediumtext NOT NULL,
-  `gtalk` varchar(32) NOT NULL,
-  `company` varchar(100) NOT NULL,
-  `department` varchar(50) NOT NULL,
-  `title` varchar(50) NOT NULL,
-  `college` varchar(50) NOT NULL,
-  `duty` varchar(30) NOT NULL,
-  `commit` varchar(250) NOT NULL,
-  `hsch` varchar(50) NOT NULL,
-  `khfn` varchar(50) NOT NULL,
-  `nickname` varchar(64) NOT NULL,
-  `updatetime` int(10) NOT NULL DEFAULT '0' COMMENT '标识头像最新修改的时间',
-  PRIMARY KEY (`uid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='用户详细信息';
-
--- --------------------------------------------------------
-
---
 -- 表的结构 `members_auto_url`
 --
 
@@ -3850,42 +3794,6 @@ CREATE TABLE IF NOT EXISTS `members_login_log` (
   PRIMARY KEY (`id`),
   KEY `zone_code` (`zone_code`,`mobile`,`created`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=244282 ;
-
--- --------------------------------------------------------
-
---
--- 表的结构 `members_tmp`
---
-
-CREATE TABLE IF NOT EXISTS `members_tmp` (
-  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `appid` int(10) NOT NULL DEFAULT '0',
-  `bind_uid` int(10) unsigned NOT NULL,
-  `to_bind_uid` int(10) unsigned NOT NULL,
-  `url_code` char(40) NOT NULL,
-  `zone_code` varchar(30) NOT NULL,
-  `mobile` char(20) NOT NULL,
-  `password` varchar(32) NOT NULL,
-  `device_id` varchar(200) NOT NULL,
-  `install_id` varchar(200) NOT NULL,
-  `phone_model` varchar(40) NOT NULL,
-  `phone_os` varchar(40) NOT NULL,
-  `source` smallint(2) NOT NULL,
-  `create_ip` varchar(20) NOT NULL,
-  `create_date` int(10) NOT NULL,
-  `reg_date` int(10) NOT NULL,
-  `reg_ip` varchar(20) NOT NULL,
-  `status` tinyint(1) NOT NULL,
-  `first_open_date` int(10) NOT NULL,
-  `first_open_ip` varchar(20) NOT NULL,
-  `last_open_date` int(10) NOT NULL,
-  `last_open_ip` varchar(20) NOT NULL,
-  `counts` smallint(5) NOT NULL,
-  PRIMARY KEY (`uid`),
-  KEY `zone_code` (`zone_code`,`mobile`),
-  KEY `bind_uid` (`bind_uid`,`device_id`),
-  KEY `url_code` (`url_code`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=932542 ;
 
 -- --------------------------------------------------------
 
@@ -3942,41 +3850,6 @@ CREATE TABLE IF NOT EXISTS `members_url` (
   KEY `url_code` (`url_code`),
   KEY `receiver_uid` (`receiver_uid`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3488609 ;
-
--- --------------------------------------------------------
-
---
--- 表的结构 `members_v2`
---
-
-CREATE TABLE IF NOT EXISTS `members_v2` (
-  `uid` int(10) unsigned NOT NULL COMMENT '用户ID',
-  `imid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '91通行证ID',
-  `mobile` char(12) NOT NULL COMMENT '手机号',
-  `username` varchar(70) DEFAULT NULL COMMENT '用户名',
-  `password` varchar(32) NOT NULL COMMENT '密码',
-  `or_password` varchar(200) NOT NULL,
-  `regip` varchar(15) NOT NULL COMMENT '注册时IP',
-  `regdate` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '注册日期',
-  `lastloginip` varchar(15) NOT NULL COMMENT '最后登录IP',
-  `lastlogintime` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '最后登录时间',
-  `appid` smallint(6) NOT NULL COMMENT '注册来源app',
-  `status` tinyint(1) unsigned NOT NULL,
-  `invite_id` int(10) unsigned NOT NULL,
-  `invite_uid` int(10) unsigned NOT NULL,
-  `invite_limit` smallint(5) NOT NULL DEFAULT '0',
-  `source` char(12) NOT NULL,
-  `private_group_limit` smallint(5) unsigned NOT NULL DEFAULT '1' COMMENT '用户可创建的私密群数量',
-  `invite_gid` int(10) NOT NULL DEFAULT '0' COMMENT '群邀请注册进来用户相应的群id',
-  `invite_aid` int(11) NOT NULL DEFAULT '0' COMMENT '活动邀请注册进来的相应活动id',
-  `verify` tinyint(1) NOT NULL DEFAULT '0' COMMENT '实名验证',
-  `public_group_limit` smallint(5) unsigned NOT NULL DEFAULT '4' COMMENT '用户可以创建的公开群群数量',
-  `show_company` tinyint(1) NOT NULL DEFAULT '1' COMMENT '1首页显示公司相关信息，0不显示',
-  `mass_sms_limit` int(10) NOT NULL DEFAULT '10',
-  PRIMARY KEY (`uid`),
-  KEY `regdate` (`regdate`),
-  KEY `mobile` (`mobile`,`password`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='用户表';
 
 -- --------------------------------------------------------
 
