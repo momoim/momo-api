@@ -16,11 +16,14 @@ class User_Controller extends Controller implements FS_Gateway_Core, User_Interf
 
     protected $model;
 
+    protected $friend_model;
+
     public function __construct()
     {
         parent::__construct();
 
         $this->model = User_Model::instance();
+        $this->friend_model = Friend_Model::instance();
     }
 
     public function index()
@@ -72,7 +75,7 @@ class User_Controller extends Controller implements FS_Gateway_Core, User_Interf
                 'avatar' => sns::getavatar($user ['uid']),
                 'access_token' => $token ['access_token'],
                 'refresh_token' => $token ['refresh_token'],
-                'status' => $user ['status'],
+                'expires_in' => $token['expires_in'],
             )
         );
     }
@@ -98,20 +101,29 @@ class User_Controller extends Controller implements FS_Gateway_Core, User_Interf
 
     public function search()
     {
+        $friends = $this->friend_model->get_user_link_cache($this->user_id);
+
         $data = $this->get_data();
         $mobiles = isset($data['mobiles']) ? $data['mobiles'] : array();
         $result = array();
         foreach ($mobiles as $mobile) {
             $res = international::check_mobile($mobile);
-            if ($res) {
-                $user = $this->model->get_user_by_mobile($res['country_code'], $res['mobile']);
-                if ($user) {
-                    $result[] = array(
-                        'id' => $user['id'],
-                        'name' => $user['username'],
-                        'avatar' => sns::getavatar($user['id'])
-                    );
+            if (!$res) {
+                continue;
+            }
+            $user = $this->model->get_user_by_mobile($res['country_code'], $res['mobile']);
+            if ($user) {
+                $uuid = $this->user_id;
+                $pos = array_search($user['id'], $friends);
+                //已经是好友或者是登录者自己
+                if ($pos !== False || $user['id'] == $this->user_id) {
+                    continue;
                 }
+                $result[] = array(
+                    'id' => $user['id'],
+                    'name' => $user['username'],
+                    'avatar' => sns::getavatar($user['id'])
+                );
             }
         }
 
