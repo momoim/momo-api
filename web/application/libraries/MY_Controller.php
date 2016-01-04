@@ -57,7 +57,17 @@ class Controller extends Controller_Core
     protected $http_code;
     protected $http_info;
 
-    protected $no_auth = array('welcome', 'user/login', 'auth/verify_code', 'auth/token', 'auth/refresh_token');
+    /**
+     * 不需要授权的接口
+     * @var array
+     */
+    protected $no_auth = array('user/login');
+
+    /**
+     * 不需要授权的模块
+     * @var array
+     */
+    protected $un_authorized = array('welcome', 'src', 'auth');
 
     /**
      * Contains the last API call.
@@ -65,6 +75,12 @@ class Controller extends Controller_Core
      * @ignore
      */
     public $url;
+
+    /**
+     * 当前请求URL
+     * @var
+     */
+    public $current_url;
 
     /**
      * 构造函数
@@ -91,8 +107,13 @@ class Controller extends Controller_Core
             }
         }
 
-        $url = $this->second = preg_replace('/.(xml|json)$/', '', $this->current_url);
+        // 不需要授权的模块
+        if (in_array($this->root, $this->un_authorized)) {
+            return TRUE;
+        }
 
+        // 不需要授权的接口
+        $url = preg_replace('/.(xml|json)$/', '', $this->current_url);
         if (in_array($url, $this->no_auth)) {
             return TRUE;
         }
