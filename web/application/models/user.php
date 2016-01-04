@@ -169,6 +169,22 @@ class User_Model extends Model implements FS_Gateway_Core
         );
     }
 
+    /**
+    * 更新用户信息
+    * @param integer $uid 用户ID
+    * @param array $field membersinfo表中字段
+    * @return mix
+    */
+    public function update_user_info($uid, $field)
+    {
+        if($this->db->update('membersinfo', $field, array("uid" => $uid))) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+
+
     public function create_token($expires_in, $refresh_token = false, $user = NULL)
     {
         $token = array(
