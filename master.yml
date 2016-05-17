@@ -35,7 +35,7 @@ fpm:
     - redis
     - memcached
   volumes:
-    - ./web:/var/www/html
+    - ./web:/data/wwwroot/momo_v3_api
     - ./data/logs:/logs
     - ./data/tmp:/tmp
     - ./data/files:/data/ndcs
