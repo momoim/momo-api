@@ -23,8 +23,8 @@ mysql:
       - MYSQL_DATABASE=momo_v3
   volumes:
       - ./data/mysql:/var/lib/mysql
-#  ports:
-#    - "3310:3306"
+  ports:
+    - "3310:3306"
 
 fpm:
   restart: always
@@ -39,15 +39,17 @@ fpm:
     - ./data/logs:/logs
     - ./data/tmp:/tmp
     - ./data/files:/data/ndcs
-
-nginx:
-  restart: always
-  image: nginx:latest
   ports:
-    - "80:80"
-  links:
-    - fpm:fpm
-  volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d
-  volumes_from:
-      - fpm
+    - 9002:9000
+
+#nginx:
+#  restart: always
+#  image: nginx:latest
+#  ports:
+#    - "80:80"
+#  links:
+#    - fpm:fpm
+#  volumes:
+#      - ./nginx/conf.d:/etc/nginx/conf.d
+#  volumes_from:
+#      - fpm

@@ -225,7 +225,7 @@
         <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z112"></relationship>
     </object>
     <object type="LMREQUEST" id="z118">
-        <attribute name="body" type="string">["{\\n\\t\\"zone_code\\": \\"86\\",\\t\\n\\t\\"mobile\\": \\"13800000000\\"\\n}"]</attribute>
+        <attribute name="body" type="string">["{\\n\\t\\"zone_code\\": \\"86\\",\\t\\n\\t\\"mobile\\": \\"18559172578\\"\\n}"]</attribute>
         <attribute name="uuid" type="string">D7835079-3A66-44C0-A8FD-70186873920A</attribute>
         <attribute name="url" type="string">["http:\\/\\/",{"data":{"environmentVariable":"0CFA1801-D040-41CC-A8ED-FC6C697B7182"},"identifier":"com.luckymarmot.EnvironmentVariableDynamicValue"},"\\/auth\\/verify_code"]</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
@@ -871,7 +871,7 @@
         <attribute name="value" type="string">["Bearer ",{"data":{"request":"E606BD00-2479-49E5-A7A1-31DE5E4E3A56","keyPath":["access_token"],"format":0},"identifier":"com.luckymarmot.ResponseBodyPathDynamicValue"}]</attribute>
         <attribute name="order" type="int64">1</attribute>
         <attribute name="name" type="string">Authorization</attribute>
-        <attribute name="enabled" type="bool">1</attribute>
+        <attribute name="enabled" type="bool">0</attribute>
         <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
         <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
         <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
