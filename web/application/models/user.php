@@ -170,14 +170,14 @@ class User_Model extends Model implements FS_Gateway_Core
     }
 
     /**
-    * 更新用户信息
-    * @param integer $uid 用户ID
-    * @param array $field membersinfo表中字段
-    * @return mix
-    */
+     * 更新用户信息
+     * @param integer $uid 用户ID
+     * @param array $field membersinfo表中字段
+     * @return mix
+     */
     public function update_user_info($uid, $field)
     {
-        if($this->db->update('membersinfo', $field, array("uid" => $uid))) {
+        if ($this->db->update('membersinfo', $field, array("uid" => $uid))) {
             return TRUE;
         } else {
             return FALSE;
@@ -231,9 +231,16 @@ class User_Model extends Model implements FS_Gateway_Core
     public function send_message($zone, $number, $code)
     {
         if ($zone == 86) {
-            require_once Kohana::find_file('vendor', 'tui');
-            $tui = new Tui();
-            return $tui->send($number, sprintf("尊敬的用户,您的注册验证码是%s,感谢您使用%s！", $code, $this->_get_app_name()));
+            require_once Kohana::find_file('vendor', 'Ucpaas.class');
+            $options = array();
+            $options['accountsid'] = '870fa8bd73006709d8286988d40c08ae';
+            $options['token'] = '3c289001c350fa7c247cc6376b68a4c1';
+
+            $appId = "e968f13a6c4f40f5a76c89cb96c79fea";
+            $templateId = "29289";
+
+            $uc = new Ucpaas($options);
+            return $uc->templateSMS($appId, $number, $templateId, sprintf("%s,%s", $code, $this->_get_app_name()));
         } else {
             return false;
         }
