@@ -15,25 +15,15 @@ mongo:
   volumes:
       - ./data/mongo:/data/db
 
-mysql:
-  restart: always
-  image: mariadb:latest
-  environment:
-      - MYSQL_ROOT_PASSWORD=123456
-      - MYSQL_DATABASE=momo_v3
-  volumes:
-      - ./data/mysql:/var/lib/mysql
-  ports:
-    - "3310:3306"
-
 fpm:
   restart: always
   build: ./php/
   links:
     - mongo
-    - mysql
     - redis
     - memcached
+  external_links:
+     -mysqld:mysql
   volumes:
     - ./web:/data/wwwroot/momo_v3_api
     - ./data/logs:/logs
